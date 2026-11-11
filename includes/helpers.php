@@ -75,7 +75,9 @@ function resolve_image(string $relativePathWithoutExt, string $fallbackUrl, bool
     foreach ($extensions as $ext) {
         $candidate = $rootDir . DIRECTORY_SEPARATOR . str_replace('/', DIRECTORY_SEPARATOR, $normalizedRel . '.' . $ext);
         if (is_file($candidate)) {
-            return app_url('/' . $normalizedRel . '.' . $ext);
+            $hash = @md5_file($candidate);
+            $ver = is_string($hash) ? ('?v=' . substr($hash, 0, 8)) : '';
+            return app_url('/' . $normalizedRel . '.' . $ext) . $ver;
         }
     }
 
@@ -91,8 +93,11 @@ function resolve_image(string $relativePathWithoutExt, string $fallbackUrl, bool
                         continue;
                     }
                     $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
-                    if (in_array($ext, $extensions, true) && is_file($dirAbs . DIRECTORY_SEPARATOR . $file)) {
-                        return app_url('/' . $dirRel . '/' . rawurlencode($file));
+                    $fullPath = $dirAbs . DIRECTORY_SEPARATOR . $file;
+                    if (in_array($ext, $extensions, true) && is_file($fullPath)) {
+                        $hash = @md5_file($fullPath);
+                        $ver = is_string($hash) ? ('?v=' . substr($hash, 0, 8)) : '';
+                        return app_url('/' . $dirRel . '/' . rawurlencode($file)) . $ver;
                     }
                 }
             }

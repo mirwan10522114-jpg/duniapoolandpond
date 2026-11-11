@@ -494,16 +494,16 @@ require __DIR__ . '/../includes/header.php';
         </div>
     </section>
 
-    <!-- SECTION BANNER KONSULTASI LAHAN (Biru Brand #024698 -> #013B7B) -->
+    <!-- SECTION BANNER KONSULTASI LAHAN (Biru Brand #013987 -> #013674) -->
     <section class="py-14 bg-[#E9F3FB] border-b border-border-hairline reveal-item">
         <div class="max-w-[1240px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
-            <div class="relative rounded-2xl text-white border border-[#1E72C6]/35 overflow-hidden shadow-[0_14px_38px_-10px_rgba(3,68,136,0.35)]" style="background: linear-gradient(125deg, #024698 0%, #0453A1 48%, #013B7B 100%);">
+            <div class="relative rounded-2xl text-white border border-[#1E72C6]/35 overflow-hidden shadow-[0_14px_38px_-10px_rgba(3,68,136,0.35)]" style="background: linear-gradient(130deg, #013987 0%, #034B9B 45%, #013674 100%);">
                 <?= render_section_decor('banner-waves', 'right-0 bottom-0 opacity-90 z-0') ?>
                 <div class="flex flex-col md:flex-row items-stretch relative z-10">
-                    <div class="relative w-full md:w-[320px] lg:w-[400px] xl:w-[426px] shrink-0 aspect-[910/1024] overflow-hidden bg-[#024392]">
+                    <div class="relative w-full md:w-[310px] lg:w-[380px] xl:w-[400px] shrink-0 aspect-[910/1024] overflow-hidden bg-[#013987]">
                         <img
                             alt="Spesialis konstruksi dan konsultasi kolam renang Dunia Pool &amp; Pond"
-                            class="w-full h-full object-cover object-top md:[mask-image:linear-gradient(to_right,#000_91.5%,transparent_100%)]"
+                            class="w-full h-full object-cover object-top md:[mask-image:linear-gradient(to_right,#000_90%,transparent_100%)]"
                             loading="lazy"
                             src="<?= e(resolve_image('images/banner/tim-teknisi', '', true)) ?>"
                         />
