@@ -499,11 +499,11 @@ require __DIR__ . '/../includes/header.php';
         <div class="max-w-[1240px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
             <div class="relative rounded-xl bg-primary-container text-white border border-primary/20 overflow-hidden shadow-md">
                 <?= render_section_decor('banner-waves', 'right-0 bottom-0 z-0') ?>
-                <div class="grid grid-cols-1 lg:grid-cols-12 items-stretch relative z-10">
-                    <div class="lg:col-span-5 bg-primary relative min-h-[240px]">
-                        <img alt="Teknisi dan insinyur kolam renang meninjau gambar teknis perencanaan hidrolika" class="w-full h-full object-cover object-top" loading="lazy" src="<?= e(resolve_image('images/banner/tim-teknisi', 'https://lh3.googleusercontent.com/aida-public/AB6AXuCp2NICnc9ZxdlWj9uKas0g8LV7PWCAtfJB8FCpLZmNlrENcUjSgZFOdEA6fB_hzNFAb6RA-TXiTXw7a4U75KDOl4uFFEgYihQp6AJMErsODUaisZwCFYA63d1EANHC8YcUmWzK7ic9C8juKNrAXeKoJ2LCkhbbjug7GjX0DVHEynTAtwckdiqxd51C0k5raamuKrnve5yJs58BF1BllJEQHfu7kGlhyTpSvbSn9T0', true)) ?>" />
+                <div class="grid grid-cols-1 md:grid-cols-12 items-stretch relative z-10">
+                    <div class="md:col-span-4 bg-primary relative aspect-[4/5] md:aspect-auto md:min-h-[380px] lg:min-h-[460px] overflow-hidden">
+                        <img alt="Spesialis konstruksi dan konsultasi kolam renang Dunia Pool &amp; Pond" class="w-full h-full object-cover object-top" loading="lazy" src="<?= e(resolve_image('images/banner/tim-teknisi', '', true)) ?>" />
                     </div>
-                    <div class="lg:col-span-7 p-8 sm:p-10 lg:p-12 flex flex-col justify-center space-y-5">
+                    <div class="md:col-span-8 p-8 sm:p-10 lg:p-12 flex flex-col justify-center space-y-5">
                         <div class="inline-flex items-center gap-2 text-xs font-mono font-semibold uppercase tracking-widest text-primary-fixed">
                             <span>Evaluasi Lahan &amp; Tata Letak</span>
                         </div>
