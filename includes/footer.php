@@ -269,6 +269,14 @@ declare(strict_types=1);
             updateScrollSpy();
         }
 
+        const sectionParam = new URLSearchParams(window.location.search).get('section');
+        if (sectionParam) {
+            const targetSection = document.getElementById(sectionParam);
+            if (targetSection) {
+                requestAnimationFrame(() => targetSection.scrollIntoView({ behavior: prefersReduced ? 'auto' : 'smooth' }));
+            }
+        }
+
         const revealEls = document.querySelectorAll('.reveal-item');
         if (!prefersReduced && 'IntersectionObserver' in window && revealEls.length > 0) {
             const observer = new IntersectionObserver((entries, obs) => {

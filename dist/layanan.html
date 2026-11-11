@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Layanan Sistem Sirkulasi &amp; Filtrasi Kolam Renang | Dunia Pool &amp; Pond</title>
+    <link href="/images/brand/favicon-dpp.png" rel="icon" type="image/png" />
+    <!-- Google Fonts: Inter (Formal Corporate Neo-Grotesk) -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <!-- Material Symbols Outlined -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <!-- Tailwind CSS with Forms and Container Queries -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#f9f9ff",
+                        "primary-fixed": "#cfe5ff",
+                        "error-container": "#ffdad6",
+                        "border-hairline": "#D5E2EC",
+                        "background": "#f9f9ff",
+                        "tertiary-container": "#006f88",
+                        "inverse-primary": "#98cbff",
+                        "on-secondary-fixed": "#001d33",
+                        "on-tertiary": "#ffffff",
+                        "action-hover": "#055887",
+                        "tertiary": "#005569",
+                        "secondary-fixed": "#cee5ff",
+                        "on-surface": "#001c3b",
+                        "text-body": "#142D46",
+                        "on-tertiary-fixed": "#001f28",
+                        "surface-tint": "#00639d",
+                        "on-error": "#ffffff",
+                        "primary-container": "#076aa7",
+                        "inverse-surface": "#0B2545",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#004a76",
+                        "secondary": "#00639b",
+                        "on-tertiary-container": "#bbecff",
+                        "surface-dim": "#c7dbff",
+                        "tertiary-fixed-dim": "#5bd5fb",
+                        "surface-container-high": "#dee8ff",
+                        "tertiary-fixed": "#b6eaff",
+                        "feedback-success": "#146C43",
+                        "secondary-container": "#63b7fe",
+                        "surface-container-highest": "#d5e3ff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#f0f3ff",
+                        "on-primary-container": "#d2e6ff",
+                        "on-surface-variant": "#404750",
+                        "surface-blue": "#E9F4FB",
+                        "outline-variant": "#c0c7d1",
+                        "primary": "#005182",
+                        "outline": "#717881",
+                        "surface": "#f9f9ff",
+                        "on-primary-fixed": "#001d33",
+                        "surface-variant": "#d5e3ff",
+                        "text-muted": "#526274",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#98cbff",
+                        "on-tertiary-fixed-variant": "#004e60",
+                        "secondary-fixed-dim": "#96cbff",
+                        "border-control": "#6D8298",
+                        "surface-secondary": "#F3F8FC",
+                        "on-secondary-container": "#004771",
+                        "on-background": "#001c3b",
+                        "surface-container": "#e7eeff",
+                        "on-primary-fixed-variant": "#004a77",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#ebf1ff",
+                        "bg-canvas": "#FFFFFF",
+                        "feedback-error": "#B42318"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "space-xs": "0.25rem",
+                        "space-xl": "2rem",
+                        "gutter-desktop": "3rem",
+                        "space-sm": "0.5rem",
+                        "gutter": "1.5rem",
+                        "gutter-mobile": "1.25rem",
+                        "margin-tablet": "2rem",
+                        "margin": "1.25rem",
+                        "gutter-tablet": "2rem",
+                        "space-lg": "1.5rem",
+                        "margin-desktop": "3rem",
+                        "space-md": "1rem"
+                    },
+                    "fontFamily": {
+                        "sans": ["Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "sans-serif"],
+                        "serif": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "mono": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "headline-lg-mobile": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "headline-md": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "display-hero": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "body-default": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "headline-sm-mobile": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "body-lead-mobile": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "headline-md-mobile": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "headline-lg": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "headline-sm": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "action-button": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "label-ui": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "display-hero-mobile": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "body-lead": ["Inter", "system-ui", "-apple-system", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["34px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-hero": ["54px", { "lineHeight": "1.08", "letterSpacing": "-0.025em", "fontWeight": "800" }],
+                        "body-default": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+                        "headline-sm-mobile": ["20px", { "lineHeight": "1.3", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+                        "body-lead-mobile": ["17px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+                        "headline-md-mobile": ["28px", { "lineHeight": "1.22", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["46px", { "lineHeight": "1.12", "letterSpacing": "-0.025em", "fontWeight": "800" }],
+                        "headline-sm": ["22px", { "lineHeight": "1.3", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+                        "action-button": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" }],
+                        "label-ui": ["14px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "500" }],
+                        "display-hero-mobile": ["36px", { "lineHeight": "1.14", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-lead": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html, body, button, input, select, textarea {
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            text-rendering: optimizeLegibility;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px #076aa7;
+            border-color: #076aa7;
+        }
+        :focus-visible {
+            outline: 3px solid #076AA7;
+            outline-offset: 2px;
+        }
+        .grid-architectural {
+            background-image:
+                linear-gradient(to right, rgba(7, 106, 167, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(7, 106, 167, 0.05) 1px, transparent 1px);
+            background-size: 56px 56px;
+        }
+        .pattern-halftone-tr {
+            background-image: radial-gradient(rgba(7, 106, 167, 0.24) 1.75px, transparent 1.75px);
+            background-size: 14px 14px;
+            -webkit-mask-image: radial-gradient(ellipse 85% 85% at 100% 0%, #000 15%, rgba(0, 0, 0, 0.4) 55%, transparent 85%);
+            mask-image: radial-gradient(ellipse 85% 85% at 100% 0%, #000 15%, rgba(0, 0, 0, 0.4) 55%, transparent 85%);
+        }
+        .pattern-halftone-bl {
+            background-image: radial-gradient(rgba(7, 106, 167, 0.22) 1.75px, transparent 1.75px);
+            background-size: 14px 14px;
+            -webkit-mask-image: radial-gradient(ellipse 85% 85% at 0% 100%, #000 15%, rgba(0, 0, 0, 0.4) 55%, transparent 85%);
+            mask-image: radial-gradient(ellipse 85% 85% at 0% 100%, #000 15%, rgba(0, 0, 0, 0.4) 55%, transparent 85%);
+        }
+        .pattern-diagonal-grid {
+            background-image: repeating-linear-gradient(
+                -45deg,
+                rgba(7, 106, 167, 0.035) 0px,
+                rgba(7, 106, 167, 0.035) 1px,
+                transparent 1px,
+                transparent 18px
+            );
+        }
+        .text-balance {
+            text-wrap: balance;
+        }
+        [id="beranda"],
+        [id="tentang-kami"],
+        [id="layanan"],
+        [id="proyek"],
+        [id="manajemen-proyek"],
+        [id="produk"],
+        [id="faq"],
+        [id="konsultasi"],
+        [id="kontak"] {
+            scroll-margin-top: 84px;
+        }
+        .reveal-item {
+            transition: opacity 0.32s ease-out, transform 0.32s ease-out;
+        }
+        .reveal-item.is-hidden-reveal {
+            opacity: 0;
+            transform: translateY(8px);
+        }
+        .reveal-item.is-visible-reveal {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto !important;
+            }
+            .reveal-item,
+            .reveal-item.is-hidden-reveal {
+                opacity: 1 !important;
+                transform: none !important;
+                transition: none !important;
+            }
+        }
+            </style>
+</head>
+<body class="bg-bg-canvas text-text-body font-body-default antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+
+<a class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:px-4 focus:py-2 focus:bg-primary-container focus:text-white focus:rounded-lg focus:text-sm focus:font-semibold focus:shadow-lg" href="#main-content">
+    Lewati ke konten utama
+</a>
+<!-- TopNavBar -->
+<header class="bg-bg-canvas/95 backdrop-blur-md dark:bg-inverse-surface border-b border-border-hairline dark:border-outline-variant shadow-[0_4px_20px_rgba(7,106,167,0.06)] dark:shadow-none docked full-width top-0 sticky z-50 transition-colors duration-150">
+    <div class="flex justify-between items-center w-full mx-auto px-5 sm:px-8 lg:px-8 xl:px-12 2xl:px-16 gap-4 xl:gap-8 h-20">
+        <!-- Brand Logo Anchor -->
+        <a class="flex items-center gap-3 sm:gap-3.5 text-left shrink-0 group focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2 rounded-lg py-1 pr-2" href="/">
+            <img
+                alt=""
+                aria-hidden="true"
+                class="h-9 sm:h-10 w-auto shrink-0 object-contain"
+                height="38"
+                src="/images/brand/logo-dpp.png"
+                width="56"
+            />
+            <div class="flex flex-col">
+                <span class="text-base sm:text-lg xl:text-xl font-headline-sm text-text-body dark:text-inverse-on-surface tracking-tight uppercase leading-tight font-extrabold whitespace-nowrap group-hover:text-primary transition-colors">Dunia Pool &amp; Pond</span>
+                <span class="text-[11px] sm:text-xs font-label-ui text-text-muted tracking-wide font-medium whitespace-nowrap">The Pool Specialist — Sejak 1997</span>
+            </div>
+        </a>
+        <!-- Desktop Navigation Links -->
+        <nav aria-label="Navigasi Utama" class="relative hidden lg:flex items-center gap-x-3 xl:gap-x-7 2xl:gap-x-10" data-initial-active="layanan" id="desktopNav">
+                                            <a
+                                        class="nav-link relative pb-1 font-action-button text-sm xl:text-[15px] whitespace-nowrap border-b-2 transition-colors duration-150 text-text-muted dark:text-outline-variant border-transparent hover:text-primary dark:hover:text-inverse-primary"
+                    data-nav-key="beranda"
+                    href="/"
+                >Beranda</a>
+                                            <a
+                                        class="nav-link relative pb-1 font-action-button text-sm xl:text-[15px] whitespace-nowrap border-b-2 transition-colors duration-150 text-text-muted dark:text-outline-variant border-transparent hover:text-primary dark:hover:text-inverse-primary"
+                    data-nav-key="tentang"
+                    href="/#tentang-kami"
+                >Tentang Kami</a>
+                                            <a
+                    aria-current="page"                    class="nav-link relative pb-1 font-action-button text-sm xl:text-[15px] whitespace-nowrap border-b-2 transition-colors duration-150 text-primary dark:text-inverse-primary border-primary dark:border-inverse-primary font-semibold"
+                    data-nav-key="layanan"
+                    href="/layanan"
+                >Layanan</a>
+                                            <a
+                                        class="nav-link relative pb-1 font-action-button text-sm xl:text-[15px] whitespace-nowrap border-b-2 transition-colors duration-150 text-text-muted dark:text-outline-variant border-transparent hover:text-primary dark:hover:text-inverse-primary"
+                    data-nav-key="proyek"
+                    href="/#proyek"
+                >Proyek</a>
+                                            <a
+                                        class="nav-link relative pb-1 font-action-button text-sm xl:text-[15px] whitespace-nowrap border-b-2 transition-colors duration-150 text-text-muted dark:text-outline-variant border-transparent hover:text-primary dark:hover:text-inverse-primary"
+                    data-nav-key="manajemen"
+                    href="/#manajemen-proyek"
+                >Manajemen</a>
+                                            <a
+                                        class="nav-link relative pb-1 font-action-button text-sm xl:text-[15px] whitespace-nowrap border-b-2 transition-colors duration-150 text-text-muted dark:text-outline-variant border-transparent hover:text-primary dark:hover:text-inverse-primary"
+                    data-nav-key="produk"
+                    href="/produk"
+                >Produk</a>
+                                            <a
+                                        class="nav-link relative pb-1 font-action-button text-sm xl:text-[15px] whitespace-nowrap border-b-2 transition-colors duration-150 text-text-muted dark:text-outline-variant border-transparent hover:text-primary dark:hover:text-inverse-primary"
+                    data-nav-key="kontak"
+                    href="/#kontak"
+                >Kontak</a>
+                        <span
+                aria-hidden="true"
+                class="pointer-events-none absolute bottom-0 left-0 !ml-0 h-[2px] w-0 bg-primary dark:bg-inverse-primary rounded-full transition-all duration-200 ease-out opacity-0"
+                id="navActiveSlider"
+            ></span>
+        </nav>
+        <!-- Trailing Action & Mobile Toggle -->
+        <div class="flex items-center shrink-0 space-x-3">
+            <a class="hidden sm:inline-flex items-center justify-center gap-2 bg-primary-container hover:bg-action-hover text-on-primary font-action-button text-sm px-4 xl:px-5 h-11 rounded-lg whitespace-nowrap transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2 shadow-sm hover:shadow font-semibold" href="/#konsultasi">
+                <span aria-hidden="true" class="material-symbols-outlined text-[18px]">chat</span>
+                <span>Konsultasi Proyek</span>
+            </a>
+            <button aria-expanded="false" aria-label="Buka navigasi menu" class="lg:hidden p-2 text-text-body hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary-container rounded-lg" id="mobileMenuBtn" type="button">
+                <span aria-hidden="true" class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+        </div>
+    </div>
+    <!-- Mobile Nav Drawer -->
+    <div class="hidden lg:hidden border-t border-border-hairline bg-bg-canvas px-margin py-4 space-y-2 shadow-lg" id="mobileMenu">
+                                <a
+                                class="mobile-nav-link block py-2 font-action-button pl-3 transition-colors text-text-body border-l-4 border-transparent hover:text-primary"
+                data-nav-key="beranda"
+                href="/"
+            >Beranda</a>
+                                <a
+                                class="mobile-nav-link block py-2 font-action-button pl-3 transition-colors text-text-body border-l-4 border-transparent hover:text-primary"
+                data-nav-key="tentang"
+                href="/#tentang-kami"
+            >Tentang Kami</a>
+                                <a
+                aria-current="page"                class="mobile-nav-link block py-2 font-action-button pl-3 transition-colors text-primary border-l-4 border-primary font-semibold"
+                data-nav-key="layanan"
+                href="/layanan"
+            >Layanan</a>
+                                <a
+                                class="mobile-nav-link block py-2 font-action-button pl-3 transition-colors text-text-body border-l-4 border-transparent hover:text-primary"
+                data-nav-key="proyek"
+                href="/#proyek"
+            >Proyek</a>
+                                <a
+                                class="mobile-nav-link block py-2 font-action-button pl-3 transition-colors text-text-body border-l-4 border-transparent hover:text-primary"
+                data-nav-key="manajemen"
+                href="/#manajemen-proyek"
+            >Manajemen</a>
+                                <a
+                                class="mobile-nav-link block py-2 font-action-button pl-3 transition-colors text-text-body border-l-4 border-transparent hover:text-primary"
+                data-nav-key="produk"
+                href="/produk"
+            >Produk</a>
+                                <a
+                                class="mobile-nav-link block py-2 font-action-button pl-3 transition-colors text-text-body border-l-4 border-transparent hover:text-primary"
+                data-nav-key="kontak"
+                href="/#kontak"
+            >Kontak</a>
+                <div class="pt-2 border-t border-border-hairline sm:hidden">
+            <a class="inline-flex w-full items-center justify-center bg-primary-container hover:bg-action-hover text-on-primary font-action-button px-5 h-11 rounded-lg transition-colors duration-150 font-semibold" href="/#konsultasi">
+                Konsultasi Proyek
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Breadcrumb & Page Header Section -->
+<section class="relative overflow-hidden border-b border-border-hairline bg-gradient-to-br from-[#EAF4FC] via-[#E3F0FA] to-[#EDF6FD] grid-architectural py-10 lg:py-14">
+    <div aria-hidden="true" class="pattern-halftone-tr pointer-events-none absolute right-0 top-0 w-72 h-52 z-0"></div>
+    <svg aria-hidden="true" class="pointer-events-none select-none absolute right-0 bottom-0 opacity-80 z-0" width="520" height="260" viewBox="0 0 520 260" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="42" r="2.5" fill="#076aa7" fill-opacity="0.05" /><circle cx="37.2" cy="44.6" r="2.5" fill="#076aa7" fill-opacity="0.05" /><circle cx="58.4" cy="47" r="2.5" fill="#076aa7" fill-opacity="0.09" /><circle cx="79.7" cy="49.2" r="2.5" fill="#076aa7" fill-opacity="0.14" /><circle cx="100.9" cy="51" r="2.5" fill="#076aa7" fill-opacity="0.18" /><circle cx="122.1" cy="52.3" r="2.5" fill="#076aa7" fill-opacity="0.21" /><circle cx="143.3" cy="52.9" r="2.5" fill="#076aa7" fill-opacity="0.25" /><circle cx="164.5" cy="52.9" r="2.5" fill="#076aa7" fill-opacity="0.28" /><circle cx="185.7" cy="52.2" r="2.5" fill="#076aa7" fill-opacity="0.3" /><circle cx="207" cy="50.8" r="2.5" fill="#076aa7" fill-opacity="0.32" /><circle cx="228.2" cy="48.7" r="2.5" fill="#076aa7" fill-opacity="0.32" /><circle cx="249.4" cy="45.8" r="2.5" fill="#076aa7" fill-opacity="0.32" /><circle cx="270.6" cy="42.4" r="2.5" fill="#076aa7" fill-opacity="0.32" /><circle cx="291.8" cy="38.4" r="2.5" fill="#076aa7" fill-opacity="0.32" /><circle cx="313" cy="33.9" r="2.5" fill="#076aa7" fill-opacity="0.32" /><circle cx="334.3" cy="29.1" r="2.5" fill="#076aa7" fill-opacity="0.3" /><circle cx="355.5" cy="24.1" r="2.5" fill="#076aa7" fill-opacity="0.28" /><circle cx="376.7" cy="19.1" r="2.5" fill="#076aa7" fill-opacity="0.25" /><circle cx="397.9" cy="14.1" r="2.5" fill="#076aa7" fill-opacity="0.21" /><circle cx="419.1" cy="9.4" r="2.5" fill="#076aa7" fill-opacity="0.18" /><circle cx="440.3" cy="5" r="2.5" fill="#076aa7" fill-opacity="0.14" /><circle cx="461.6" cy="1.1" r="2.5" fill="#076aa7" fill-opacity="0.09" /><circle cx="482.8" cy="-2.3" r="2.5" fill="#076aa7" fill-opacity="0.05" /><circle cx="504" cy="-5" r="2.5" fill="#076aa7" fill-opacity="0.05" /><circle cx="16" cy="72.7" r="2.3" fill="#076aa7" fill-opacity="0.05" /><circle cx="37.2" cy="75.4" r="2.3" fill="#076aa7" fill-opacity="0.05" /><circle cx="58.4" cy="77.6" r="2.3" fill="#076aa7" fill-opacity="0.08" /><circle cx="79.7" cy="79.3" r="2.3" fill="#076aa7" fill-opacity="0.12" /><circle cx="100.9" cy="80.3" r="2.3" fill="#076aa7" fill-opacity="0.16" /><circle cx="122.1" cy="80.6" r="2.3" fill="#076aa7" fill-opacity="0.19" /><circle cx="143.3" cy="80.1" r="2.3" fill="#076aa7" fill-opacity="0.23" /><circle cx="164.5" cy="78.8" r="2.3" fill="#076aa7" fill-opacity="0.25" /><circle cx="185.7" cy="76.7" r="2.3" fill="#076aa7" fill-opacity="0.27" /><circle cx="207" cy="73.8" r="2.3" fill="#076aa7" fill-opacity="0.29" /><circle cx="228.2" cy="70.1" r="2.3" fill="#076aa7" fill-opacity="0.3" /><circle cx="249.4" cy="65.9" r="2.3" fill="#076aa7" fill-opacity="0.31" /><circle cx="270.6" cy="61.1" r="2.3" fill="#076aa7" fill-opacity="0.31" /><circle cx="291.8" cy="55.9" r="2.3" fill="#076aa7" fill-opacity="0.3" /><circle cx="313" cy="50.5" r="2.3" fill="#076aa7" fill-opacity="0.29" /><circle cx="334.3" cy="45" r="2.3" fill="#076aa7" fill-opacity="0.27" /><circle cx="355.5" cy="39.5" r="2.3" fill="#076aa7" fill-opacity="0.25" /><circle cx="376.7" cy="34.3" r="2.3" fill="#076aa7" fill-opacity="0.23" /><circle cx="397.9" cy="29.4" r="2.3" fill="#076aa7" fill-opacity="0.19" /><circle cx="419.1" cy="25.1" r="2.3" fill="#076aa7" fill-opacity="0.16" /><circle cx="440.3" cy="21.3" r="2.3" fill="#076aa7" fill-opacity="0.12" /><circle cx="461.6" cy="18.3" r="2.3" fill="#076aa7" fill-opacity="0.08" /><circle cx="482.8" cy="16" r="2.3" fill="#076aa7" fill-opacity="0.05" /><circle cx="504" cy="14.5" r="2.3" fill="#076aa7" fill-opacity="0.05" /><circle cx="16" cy="104.1" r="2.1" fill="#076aa7" fill-opacity="0.05" /><circle cx="37.2" cy="106.2" r="2.1" fill="#076aa7" fill-opacity="0.05" /><circle cx="58.4" cy="107.6" r="2.1" fill="#076aa7" fill-opacity="0.07" /><circle cx="79.7" cy="108.3" r="2.1" fill="#076aa7" fill-opacity="0.11" /><circle cx="100.9" cy="108" r="2.1" fill="#076aa7" fill-opacity="0.14" /><circle cx="122.1" cy="106.8" r="2.1" fill="#076aa7" fill-opacity="0.17" /><circle cx="143.3" cy="104.7" r="2.1" fill="#076aa7" fill-opacity="0.2" /><circle cx="164.5" cy="101.8" r="2.1" fill="#076aa7" fill-opacity="0.23" /><circle cx="185.7" cy="98" r="2.1" fill="#076aa7" fill-opacity="0.25" /><circle cx="207" cy="93.5" r="2.1" fill="#076aa7" fill-opacity="0.26" /><circle cx="228.2" cy="88.4" r="2.1" fill="#076aa7" fill-opacity="0.27" /><circle cx="249.4" cy="82.9" r="2.1" fill="#076aa7" fill-opacity="0.28" /><circle cx="270.6" cy="77" r="2.1" fill="#076aa7" fill-opacity="0.28" /><circle cx="291.8" cy="71" r="2.1" fill="#076aa7" fill-opacity="0.27" /><circle cx="313" cy="65.1" r="2.1" fill="#076aa7" fill-opacity="0.26" /><circle cx="334.3" cy="59.4" r="2.1" fill="#076aa7" fill-opacity="0.25" /><circle cx="355.5" cy="54" r="2.1" fill="#076aa7" fill-opacity="0.23" /><circle cx="376.7" cy="49.2" r="2.1" fill="#076aa7" fill-opacity="0.2" /><circle cx="397.9" cy="45" r="2.1" fill="#076aa7" fill-opacity="0.17" /><circle cx="419.1" cy="41.6" r="2.1" fill="#076aa7" fill-opacity="0.14" /><circle cx="440.3" cy="39.1" r="2.1" fill="#076aa7" fill-opacity="0.11" /><circle cx="461.6" cy="37.4" r="2.1" fill="#076aa7" fill-opacity="0.07" /><circle cx="482.8" cy="36.7" r="2.1" fill="#076aa7" fill-opacity="0.05" /><circle cx="504" cy="36.9" r="2.1" fill="#076aa7" fill-opacity="0.05" /><circle cx="16" cy="134.9" r="1.9" fill="#076aa7" fill-opacity="0.05" /><circle cx="37.2" cy="135.8" r="1.9" fill="#076aa7" fill-opacity="0.05" /><circle cx="58.4" cy="135.8" r="1.9" fill="#076aa7" fill-opacity="0.07" /><circle cx="79.7" cy="134.8" r="1.9" fill="#076aa7" fill-opacity="0.1" /><circle cx="100.9" cy="132.8" r="1.9" fill="#076aa7" fill-opacity="0.13" /><circle cx="122.1" cy="129.8" r="1.9" fill="#076aa7" fill-opacity="0.15" /><circle cx="143.3" cy="126" r="1.9" fill="#076aa7" fill-opacity="0.18" /><circle cx="164.5" cy="121.3" r="1.9" fill="#076aa7" fill-opacity="0.2" /><circle cx="185.7" cy="115.9" r="1.9" fill="#076aa7" fill-opacity="0.22" /><circle cx="207" cy="110" r="1.9" fill="#076aa7" fill-opacity="0.23" /><circle cx="228.2" cy="103.7" r="1.9" fill="#076aa7" fill-opacity="0.24" /><circle cx="249.4" cy="97.3" r="1.9" fill="#076aa7" fill-opacity="0.24" /><circle cx="270.6" cy="90.8" r="1.9" fill="#076aa7" fill-opacity="0.24" /><circle cx="291.8" cy="84.6" r="1.9" fill="#076aa7" fill-opacity="0.24" /><circle cx="313" cy="78.7" r="1.9" fill="#076aa7" fill-opacity="0.23" /><circle cx="334.3" cy="73.4" r="1.9" fill="#076aa7" fill-opacity="0.22" /><circle cx="355.5" cy="68.8" r="1.9" fill="#076aa7" fill-opacity="0.2" /><circle cx="376.7" cy="65.1" r="1.9" fill="#076aa7" fill-opacity="0.18" /><circle cx="397.9" cy="62.2" r="1.9" fill="#076aa7" fill-opacity="0.15" /><circle cx="419.1" cy="60.4" r="1.9" fill="#076aa7" fill-opacity="0.13" /><circle cx="440.3" cy="59.5" r="1.9" fill="#076aa7" fill-opacity="0.1" /><circle cx="461.6" cy="59.6" r="1.9" fill="#076aa7" fill-opacity="0.07" /><circle cx="482.8" cy="60.7" r="1.9" fill="#076aa7" fill-opacity="0.05" /><circle cx="504" cy="62.6" r="1.9" fill="#076aa7" fill-opacity="0.05" /><circle cx="16" cy="163.6" r="1.7" fill="#076aa7" fill-opacity="0.05" /><circle cx="37.2" cy="162.8" r="1.7" fill="#076aa7" fill-opacity="0.05" /><circle cx="58.4" cy="160.9" r="1.7" fill="#076aa7" fill-opacity="0.06" /><circle cx="79.7" cy="157.9" r="1.7" fill="#076aa7" fill-opacity="0.09" /><circle cx="100.9" cy="154" r="1.7" fill="#076aa7" fill-opacity="0.11" /><circle cx="122.1" cy="149.1" r="1.7" fill="#076aa7" fill-opacity="0.13" /><circle cx="143.3" cy="143.5" r="1.7" fill="#076aa7" fill-opacity="0.16" /><circle cx="164.5" cy="137.2" r="1.7" fill="#076aa7" fill-opacity="0.17" /><circle cx="185.7" cy="130.5" r="1.7" fill="#076aa7" fill-opacity="0.19" /><circle cx="207" cy="123.6" r="1.7" fill="#076aa7" fill-opacity="0.2" /><circle cx="228.2" cy="116.7" r="1.7" fill="#076aa7" fill-opacity="0.21" /><circle cx="249.4" cy="110" r="1.7" fill="#076aa7" fill-opacity="0.21" /><circle cx="270.6" cy="103.6" r="1.7" fill="#076aa7" fill-opacity="0.21" /><circle cx="291.8" cy="97.8" r="1.7" fill="#076aa7" fill-opacity="0.21" /><circle cx="313" cy="92.8" r="1.7" fill="#076aa7" fill-opacity="0.2" /><circle cx="334.3" cy="88.6" r="1.7" fill="#076aa7" fill-opacity="0.19" /><circle cx="355.5" cy="85.5" r="1.7" fill="#076aa7" fill-opacity="0.17" /><circle cx="376.7" cy="83.4" r="1.7" fill="#076aa7" fill-opacity="0.16" /><circle cx="397.9" cy="82.3" r="1.7" fill="#076aa7" fill-opacity="0.13" /><circle cx="419.1" cy="82.4" r="1.7" fill="#076aa7" fill-opacity="0.11" /><circle cx="440.3" cy="83.5" r="1.7" fill="#076aa7" fill-opacity="0.09" /><circle cx="461.6" cy="85.6" r="1.7" fill="#076aa7" fill-opacity="0.06" /><circle cx="482.8" cy="88.5" r="1.7" fill="#076aa7" fill-opacity="0.05" /><circle cx="504" cy="92.1" r="1.7" fill="#076aa7" fill-opacity="0.05" /><circle cx="16" cy="189" r="1.5" fill="#076aa7" fill-opacity="0.05" /><circle cx="37.2" cy="186.1" r="1.5" fill="#076aa7" fill-opacity="0.05" /><circle cx="58.4" cy="182.1" r="1.5" fill="#076aa7" fill-opacity="0.05" /><circle cx="79.7" cy="177.1" r="1.5" fill="#076aa7" fill-opacity="0.07" /><circle cx="100.9" cy="171.2" r="1.5" fill="#076aa7" fill-opacity="0.09" /><circle cx="122.1" cy="164.6" r="1.5" fill="#076aa7" fill-opacity="0.11" /><circle cx="143.3" cy="157.5" r="1.5" fill="#076aa7" fill-opacity="0.13" /><circle cx="164.5" cy="150.2" r="1.5" fill="#076aa7" fill-opacity="0.15" /><circle cx="185.7" cy="142.8" r="1.5" fill="#076aa7" fill-opacity="0.16" /><circle cx="207" cy="135.5" r="1.5" fill="#076aa7" fill-opacity="0.17" /><circle cx="228.2" cy="128.6" r="1.5" fill="#076aa7" fill-opacity="0.18" /><circle cx="249.4" cy="122.4" r="1.5" fill="#076aa7" fill-opacity="0.18" /><circle cx="270.6" cy="116.9" r="1.5" fill="#076aa7" fill-opacity="0.18" /><circle cx="291.8" cy="112.3" r="1.5" fill="#076aa7" fill-opacity="0.18" /><circle cx="313" cy="108.8" r="1.5" fill="#076aa7" fill-opacity="0.17" /><circle cx="334.3" cy="106.4" r="1.5" fill="#076aa7" fill-opacity="0.16" /><circle cx="355.5" cy="105.2" r="1.5" fill="#076aa7" fill-opacity="0.15" /><circle cx="376.7" cy="105.2" r="1.5" fill="#076aa7" fill-opacity="0.13" /><circle cx="397.9" cy="106.3" r="1.5" fill="#076aa7" fill-opacity="0.11" /><circle cx="419.1" cy="108.4" r="1.5" fill="#076aa7" fill-opacity="0.09" /><circle cx="440.3" cy="111.5" r="1.5" fill="#076aa7" fill-opacity="0.07" /><circle cx="461.6" cy="115.4" r="1.5" fill="#076aa7" fill-opacity="0.05" /><circle cx="482.8" cy="119.9" r="1.5" fill="#076aa7" fill-opacity="0.05" /><circle cx="504" cy="124.7" r="1.5" fill="#076aa7" fill-opacity="0.05" /><circle cx="16" cy="210.2" r="1.3" fill="#076aa7" fill-opacity="0.05" /><circle cx="37.2" cy="205.1" r="1.3" fill="#076aa7" fill-opacity="0.05" /><circle cx="58.4" cy="199" r="1.3" fill="#076aa7" fill-opacity="0.05" /><circle cx="79.7" cy="192.1" r="1.3" fill="#076aa7" fill-opacity="0.06" /><circle cx="100.9" cy="184.7" r="1.3" fill="#076aa7" fill-opacity="0.08" /><circle cx="122.1" cy="176.9" r="1.3" fill="#076aa7" fill-opacity="0.1" /><circle cx="143.3" cy="169" r="1.3" fill="#076aa7" fill-opacity="0.11" /><circle cx="164.5" cy="161.2" r="1.3" fill="#076aa7" fill-opacity="0.12" /><circle cx="185.7" cy="153.8" r="1.3" fill="#076aa7" fill-opacity="0.13" /><circle cx="207" cy="147" r="1.3" fill="#076aa7" fill-opacity="0.14" /><circle cx="228.2" cy="141" r="1.3" fill="#076aa7" fill-opacity="0.15" /><circle cx="249.4" cy="136" r="1.3" fill="#076aa7" fill-opacity="0.15" /><circle cx="270.6" cy="132.1" r="1.3" fill="#076aa7" fill-opacity="0.15" /><circle cx="291.8" cy="129.4" r="1.3" fill="#076aa7" fill-opacity="0.15" /><circle cx="313" cy="128" r="1.3" fill="#076aa7" fill-opacity="0.14" /><circle cx="334.3" cy="127.9" r="1.3" fill="#076aa7" fill-opacity="0.13" /><circle cx="355.5" cy="129" r="1.3" fill="#076aa7" fill-opacity="0.12" /><circle cx="376.7" cy="131.2" r="1.3" fill="#076aa7" fill-opacity="0.11" /><circle cx="397.9" cy="134.5" r="1.3" fill="#076aa7" fill-opacity="0.1" /><circle cx="419.1" cy="138.6" r="1.3" fill="#076aa7" fill-opacity="0.08" /><circle cx="440.3" cy="143.4" r="1.3" fill="#076aa7" fill-opacity="0.06" /><circle cx="461.6" cy="148.7" r="1.3" fill="#076aa7" fill-opacity="0.05" /><circle cx="482.8" cy="154.1" r="1.3" fill="#076aa7" fill-opacity="0.05" /><circle cx="504" cy="159.5" r="1.3" fill="#076aa7" fill-opacity="0.05" /><circle cx="16" cy="226.9" r="1.1" fill="#076aa7" fill-opacity="0.05" /><circle cx="37.2" cy="219.8" r="1.1" fill="#076aa7" fill-opacity="0.05" /><circle cx="58.4" cy="212" r="1.1" fill="#076aa7" fill-opacity="0.05" /><circle cx="79.7" cy="203.8" r="1.1" fill="#076aa7" fill-opacity="0.05" /><circle cx="100.9" cy="195.4" r="1.1" fill="#076aa7" fill-opacity="0.06" /><circle cx="122.1" cy="187.1" r="1.1" fill="#076aa7" fill-opacity="0.08" /><circle cx="143.3" cy="179.2" r="1.1" fill="#076aa7" fill-opacity="0.09" /><circle cx="164.5" cy="171.9" r="1.1" fill="#076aa7" fill-opacity="0.1" /><circle cx="185.7" cy="165.4" r="1.1" fill="#076aa7" fill-opacity="0.11" /><circle cx="207" cy="159.9" r="1.1" fill="#076aa7" fill-opacity="0.11" /><circle cx="228.2" cy="155.6" r="1.1" fill="#076aa7" fill-opacity="0.12" /><circle cx="249.4" cy="152.6" r="1.1" fill="#076aa7" fill-opacity="0.12" /><circle cx="270.6" cy="150.9" r="1.1" fill="#076aa7" fill-opacity="0.12" /><circle cx="291.8" cy="150.6" r="1.1" fill="#076aa7" fill-opacity="0.12" /><circle cx="313" cy="151.7" r="1.1" fill="#076aa7" fill-opacity="0.11" /><circle cx="334.3" cy="153.9" r="1.1" fill="#076aa7" fill-opacity="0.11" /><circle cx="355.5" cy="157.4" r="1.1" fill="#076aa7" fill-opacity="0.1" /><circle cx="376.7" cy="161.7" r="1.1" fill="#076aa7" fill-opacity="0.09" /><circle cx="397.9" cy="166.8" r="1.1" fill="#076aa7" fill-opacity="0.08" /><circle cx="419.1" cy="172.5" r="1.1" fill="#076aa7" fill-opacity="0.06" /><circle cx="440.3" cy="178.4" r="1.1" fill="#076aa7" fill-opacity="0.05" /><circle cx="461.6" cy="184.3" r="1.1" fill="#076aa7" fill-opacity="0.05" /><circle cx="482.8" cy="190" r="1.1" fill="#076aa7" fill-opacity="0.05" /><circle cx="504" cy="195.1" r="1.1" fill="#076aa7" fill-opacity="0.05" /></svg>    <div class="max-w-[1240px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop relative z-10">
+        <nav aria-label="Breadcrumb" class="mb-5">
+            <ol class="flex items-center space-x-2 text-label-ui font-label-ui text-text-muted text-sm">
+                <li>
+                    <a class="hover:text-primary transition-colors duration-150 flex items-center" href="/">
+                        <span class="material-symbols-outlined text-base mr-1">home</span>
+                        Beranda
+                    </a>
+                </li>
+                <li class="flex items-center text-outline-variant">/</li>
+                <li>
+                    <a class="hover:text-primary transition-colors duration-150" href="/#layanan">Layanan</a>
+                </li>
+                <li class="flex items-center text-outline-variant">/</li>
+                <li aria-current="page" class="text-text-body font-semibold truncate">Sistem Sirkulasi &amp; Filtrasi</li>
+            </ol>
+        </nav>
+        <div class="inline-flex items-center px-3 py-1 rounded bg-white shadow-sm border border-primary/20 text-primary font-label-ui text-label-ui mb-4">
+            <span class="material-symbols-outlined mr-1.5 text-base text-primary">water_drop</span>
+            Layanan Hidrolika &amp; Mekanikal Kolam
+        </div>
+        <h1 class="text-headline-lg-mobile lg:text-headline-lg font-headline-lg text-text-body tracking-tight mb-4 max-w-4xl">
+            Layanan Sistem Sirkulasi &amp; Filtrasi Kolam Renang
+        </h1>
+        <p class="text-body-lead-mobile lg:text-body-lead font-body-lead text-text-muted max-w-4xl leading-relaxed">
+            Perancangan, instalasi, dan kalkulasi hidrolika pipa sirkulasi, sand filter, pompa efisiensi tinggi, skimmer box, hingga sistem overflow dan balancing tank untuk menjamin perputaran air kolam jernih, higienis, dan minim hambatan tekanan (friction loss).
+        </p>
+    </div>
+</section>
+
+<!-- Main Content Section -->
+<main class="max-w-[1240px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-12 lg:py-16" id="main-content" style="background-image: linear-gradient(to right, rgba(213, 226, 236, 0.25) 1px, transparent 1px), linear-gradient(rgba(213, 226, 236, 0.25) 1px, transparent 1px); background-size: 64px 64px;">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+        <!-- KOLOM KIRI -->
+        <div class="lg:col-span-8 space-y-12">
+            <div class="border border-border-hairline rounded-xl overflow-hidden bg-bg-canvas">
+                <div class="aspect-[16/9] w-full overflow-hidden bg-surface-blue">
+                    <img alt="Ruang Mesin Pompa &amp; Sistem Filtrasi Kolam Renang" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1TvwhB5TwHkTq4hlqo-jEoNyR0hr6syOmVWylLaEPG4F2y238npPCXRYbeC3yh3MSDBNo77Zj6Iw73LAObFUf2Job1f_gCatERmuYLCIlELJKmiYgBb5E5MlLz-RgJF7bgbim_xf7EhjPhEKpcqKoeecKUyyV9kKG3FoMN8H2OnqnL17MK_VRj6wQuUKoVNvxjTaegr9WMeoUvdWrtK46Xz2Z0Z1C76SnS4zBzGQ" />
+                </div>
+                <div class="p-6 bg-bg-canvas border-t border-border-hairline flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <div>
+                        <p class="font-headline-sm text-headline-sm text-text-body text-base font-semibold">Ruang Mesin Terintegrasi Standar Hidrolika</p>
+                        <p class="font-body-default text-text-muted text-sm mt-0.5">Penataan pipa suction, discharge, manifold valve, dan filtrasi bertekanan terkalibrasi.</p>
+                    </div>
+                    <div class="inline-flex items-center px-3 py-1 rounded bg-surface-secondary border border-border-hairline text-text-body font-label-ui text-xs whitespace-nowrap">
+                        <span class="material-symbols-outlined text-feedback-success text-sm mr-1.5" style="font-variation-settings: 'FILL' 1;">verified</span>
+                        Standar DIN &amp; ASTM D1785
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-6 md:p-8 rounded-xl border border-border-hairline bg-surface-secondary">
+                <h2 class="font-headline-sm text-headline-sm text-text-body mb-3">
+                    Mengapa Hidrolika Sirkulasi yang Tepat Sangat Krusial?
+                </h2>
+                <p class="font-body-default text-body-default text-text-muted leading-relaxed mb-4">
+                    Banyak kolam renang mengalami masalah air keruh kronis atau penggunaan bahan kimia berlebihan bukan karena kekurangan disinfektan, melainkan akibat <span class="font-semibold text-text-body">kesalahan kalkulasi debit hidrolika (flow rate)</span> dan hambatan gesekan (friction loss) pipa. Pipa yang terlalu kecil memaksa motor pompa bekerja di luar efisiensi beban terbaiknya, memicu kavitasi mekanis, panas berlebih, dan boros daya listrik.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+                    <div class="p-4 rounded-lg bg-bg-canvas border border-border-hairline">
+                        <span class="material-symbols-outlined text-primary mb-2">water_lux</span>
+                        <h3 class="font-headline-sm text-sm font-semibold text-text-body mb-1">Kejernihan Kristal</h3>
+                        <p class="font-body-default text-xs text-text-muted">Turnover 4-6 jam menjamin 100% volume air tersaring sempurna tanpa area mati (dead spots).</p>
+                    </div>
+                    <div class="p-4 rounded-lg bg-bg-canvas border border-border-hairline">
+                        <span class="material-symbols-outlined text-primary mb-2">bolt</span>
+                        <h3 class="font-headline-sm text-sm font-semibold text-text-body mb-1">Hemat Listrik Pompa</h3>
+                        <p class="font-body-default text-xs text-text-muted">Diameter pipa terukur mereduksi beban head tekanan, menghemat konsumsi kWh hingga 30%.</p>
+                    </div>
+                    <div class="p-4 rounded-lg bg-bg-canvas border border-border-hairline">
+                        <span class="material-symbols-outlined text-primary mb-2">hourglass_top</span>
+                        <h3 class="font-headline-sm text-sm font-semibold text-text-body mb-1">Keawetan Media Filter</h3>
+                        <p class="font-body-default text-xs text-text-muted">Laju backwash dan filtration velocity seimbang menjaga pasir silika atau AFM tidak cepat mengeras.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 Pilar Pekerjaan -->
+            <div>
+                <div class="mb-6">
+                    <span class="font-label-ui text-label-ui text-primary font-semibold uppercase tracking-wider text-xs">Lingkup Rekayasa Teknik</span>
+                    <h2 class="font-headline-md-mobile lg:font-headline-md text-headline-md text-text-body mt-1">
+                        4 Pilar Pekerjaan Sistem Sirkulasi &amp; Filtrasi
+                    </h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="p-6 rounded-xl border border-border-hairline bg-bg-canvas flex flex-col justify-between relative overflow-hidden shadow-sm hover:border-primary/40 transition duration-150">
+                        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary-container"></div>
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-10 h-10 rounded-lg bg-surface-blue flex items-center justify-center text-primary font-semibold font-headline-sm text-sm border border-border-hairline">01</div>
+                                <span class="text-[11px] font-mono text-text-muted bg-surface-secondary px-2 py-0.5 rounded border border-border-hairline">Kalkulasi TDH</span>
+                            </div>
+                            <h3 class="font-headline-sm text-lg font-semibold text-text-body mb-2">Kalkulasi Turnover Rate &amp; TDH</h3>
+                            <p class="font-body-default text-sm text-text-muted leading-relaxed">
+                                Perhitungan matematis debit sirkulasi (<span class="text-text-body font-mono font-medium">m³/jam</span>) berdasarkan kubikasi total air kolam. Dilengkapi kalkulasi <span class="italic text-text-body">Total Dynamic Head (TDH)</span> yang memperhitungkan rugi gesek sambungan elbow, tee, check valve, dan elevasi ruang mesin untuk efisiensi motor pompa.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-border-hairline flex items-center text-xs font-label-ui text-text-muted">
+                            <span class="material-symbols-outlined text-primary text-base mr-1.5">calculate</span>
+                            Metode: Standar Hydraulic Institute
+                        </div>
+                    </div>
+                    <div class="p-6 rounded-xl border border-border-hairline bg-bg-canvas flex flex-col justify-between relative overflow-hidden shadow-sm hover:border-primary/40 transition duration-150">
+                        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary-container"></div>
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-10 h-10 rounded-lg bg-surface-blue flex items-center justify-center text-primary font-semibold font-headline-sm text-sm border border-border-hairline">02</div>
+                                <span class="text-[11px] font-mono text-text-muted bg-surface-secondary px-2 py-0.5 rounded border border-border-hairline">Media Sand/AFM</span>
+                            </div>
+                            <h3 class="font-headline-sm text-lg font-semibold text-text-body mb-2">Instalasi Pompa &amp; Sand/Cartridge Filter</h3>
+                            <p class="font-body-default text-sm text-text-muted leading-relaxed">
+                                Penyelarasan kapasitas tabung filter (bobot pasir silika grade 16/30 atau Activated Glass Media) dengan kurva daya pompa (HP / kW). Pemasangan fondasi peredam getaran (anti-vibration pad) untuk meredam resonansi mesin pada bangunan.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-border-hairline flex items-center text-xs font-label-ui text-text-muted">
+                            <span class="material-symbols-outlined text-primary text-base mr-1.5">filter_alt</span>
+                            Kompatibilitas: Silica Sand &amp; AFM Glass
+                        </div>
+                    </div>
+                    <div class="p-6 rounded-xl border border-border-hairline bg-bg-canvas flex flex-col justify-between relative overflow-hidden shadow-sm hover:border-primary/40 transition duration-150">
+                        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary-container"></div>
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-10 h-10 rounded-lg bg-surface-blue flex items-center justify-center text-primary font-semibold font-headline-sm text-sm border border-border-hairline">03</div>
+                                <span class="text-[11px] font-mono text-text-muted bg-surface-secondary px-2 py-0.5 rounded border border-border-hairline">Jalur Pipa AW</span>
+                            </div>
+                            <h3 class="font-headline-sm text-lg font-semibold text-text-body mb-2">Perpipaan Hidrolis (Skimmer &amp; Overflow)</h3>
+                            <p class="font-body-default text-sm text-text-muted leading-relaxed">
+                                Pemasangan rangkaian jalur suction (main drain, skimmer box, vacuum line) dan pipa discharge (return inlet jet nozzle). Untuk sistem overflow, integrasi sistem pemipaan gutter gravitasi menuju balancing tank dengan jalur hisap balancing otomatis.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-border-hairline flex items-center text-xs font-label-ui text-text-muted">
+                            <span class="material-symbols-outlined text-primary text-base mr-1.5">plumbing</span>
+                            Pipa PVC AW High Pressure Class
+                        </div>
+                    </div>
+                    <div class="p-6 rounded-xl border border-border-hairline bg-bg-canvas flex flex-col justify-between relative overflow-hidden shadow-sm hover:border-primary/40 transition duration-150">
+                        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary-container"></div>
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-10 h-10 rounded-lg bg-surface-blue flex items-center justify-center text-primary font-semibold font-headline-sm text-sm border border-border-hairline">04</div>
+                                <span class="text-[11px] font-mono text-text-muted bg-surface-secondary px-2 py-0.5 rounded border border-border-hairline">Anti-Entrapment</span>
+                            </div>
+                            <h3 class="font-headline-sm text-lg font-semibold text-text-body mb-2">Fitting Distribusi &amp; Anti-Vortex Safety</h3>
+                            <p class="font-body-default text-sm text-text-muted leading-relaxed">
+                                Pemasangan main drain bersertifikasi anti-vortex (mencegah bahaya sedotan pusaran bagi perenang), eyeball adjustable return inlet terarah, foot valve non-return, serta true-union ball valve berbahan PVC tahan zat klorin pekat.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-border-hairline flex items-center text-xs font-label-ui text-text-muted">
+                            <span class="material-symbols-outlined text-primary text-base mr-1.5">shield</span>
+                            Keamanan: Perlindungan Anti-Entrapment
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabel Komparasi Skimmer vs Overflow -->
+            <div class="border border-border-hairline rounded-xl bg-bg-canvas overflow-hidden">
+                <div class="p-6 border-b border-border-hairline bg-surface-secondary">
+                    <span class="font-label-ui text-label-ui text-primary font-semibold uppercase tracking-wider text-xs">Panduan Pemilihan</span>
+                    <h2 class="font-headline-sm text-headline-sm text-text-body mt-1">Komparasi Teknis: Sistem Skimmer vs Sistem Overflow</h2>
+                    <p class="font-body-default text-sm text-text-muted mt-1">
+                        Tentukan jenis sirkulasi yang tepat sesuai ketersediaan lahan, anggaran konstruksi, dan preferensi visual arsitektur Anda.
+                    </p>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse text-sm font-body-default">
+                        <thead>
+                            <tr class="border-b border-border-hairline bg-gradient-to-r from-surface-blue to-surface-secondary">
+                                <th class="p-4 font-headline-sm text-xs font-bold text-text-body tracking-wider uppercase w-1/4">Parameter Rekayasa</th>
+                                <th class="p-4 font-headline-sm text-xs font-bold text-primary tracking-wider uppercase w-3/8">
+                                    <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white shadow-sm border border-border-hairline text-primary">
+                                        <span class="material-symbols-outlined text-xs">check_circle</span> Sistem Skimmer Box
+                                    </div>
+                                </th>
+                                <th class="p-4 font-headline-sm text-xs font-bold text-tertiary tracking-wider uppercase w-3/8">
+                                    <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white shadow-sm border border-border-hairline text-tertiary">
+                                        <span class="material-symbols-outlined text-xs">waves</span> Sistem Overflow / Semi-Overflow
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-border-hairline text-text-muted">
+                            <tr class="hover:bg-surface-secondary/20 transition-colors duration-150">
+                                <td class="p-4 font-semibold text-text-body bg-surface-secondary/50">Level Permukaan Air</td>
+                                <td class="p-4">10–15 cm di bawah top bibir kolam (coping stone).</td>
+                                <td class="p-4 font-medium text-text-body">Rata sempurna dengan bibir kolam atau tumpah ke dinding (infinity edge).</td>
+                            </tr>
+                            <tr class="hover:bg-surface-secondary/20 transition-colors duration-150">
+                                <td class="p-4 font-semibold text-text-body bg-surface-secondary/50">Kebutuhan Ruang &amp; Tangki</td>
+                                <td class="p-4">Tidak memerlukan Balancing Tank. Ruang mesin lebih kompak.</td>
+                                <td class="p-4">Wajib memiliki Balancing Tank (kapasitas 8-12% total volume kolam).</td>
+                            </tr>
+                            <tr class="hover:bg-surface-secondary/20 transition-colors duration-150">
+                                <td class="p-4 font-semibold text-text-body bg-surface-secondary/50">Saluran Limpahan (Gutter)</td>
+                                <td class="p-4">Tidak ada selokan limpahan, cukup kotak skimmer di dinding kolam.</td>
+                                <td class="p-4">Dilengkapi parit gutter penampung di sepanjang sisi kolam dengan grill penutup.</td>
+                            </tr>
+                            <tr class="hover:bg-surface-secondary/20 transition-colors duration-150">
+                                <td class="p-4 font-semibold text-text-body bg-surface-secondary/50">Kecepatan Pembersihan Permukaan</td>
+                                <td class="p-4">Efektif pada radius hisap kotak skimmer.</td>
+                                <td class="p-4">Sangat cepat dan merata ke seluruh keliling bibir kolam.</td>
+                            </tr>
+                            <tr class="hover:bg-surface-secondary/20 transition-colors duration-150">
+                                <td class="p-4 font-semibold text-text-body bg-surface-secondary/50">Investasi &amp; Kompleksitas Pipa</td>
+                                <td class="p-4 text-feedback-success font-medium bg-feedback-success/5">Ekonomis, jalur perpipaan simpel, minim evaporasi.</td>
+                                <td class="p-4">Investasi lebih tinggi karena volume galian, beton balancing, dan pipa manifold.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 5 Tahap Prosedur -->
+            <div>
+                <div class="mb-6">
+                    <span class="font-label-ui text-label-ui text-primary font-semibold uppercase tracking-wider text-xs">Standard Operating Procedure</span>
+                    <h2 class="font-headline-md-mobile lg:font-headline-md text-headline-md text-text-body mt-1">
+                        5 Tahapan Prosedur Pengerjaan &amp; Pengujian Hidrolis
+                    </h2>
+                    <p class="font-body-default text-text-muted mt-1">
+                        Setiap proyek dikerjakan berdasarkan kaidah mekanikal-hidrolika terukur untuk mencegah risiko pipa pecah atau kebocoran di bawah struktur beton.
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-start p-5 rounded-xl border border-border-hairline bg-bg-canvas">
+                        <div class="flex-shrink-0 w-9 h-9 rounded-lg bg-surface-blue text-primary font-headline-sm font-semibold flex items-center justify-center mr-4 text-sm">1</div>
+                        <div>
+                            <h3 class="font-headline-sm text-base font-semibold text-text-body mb-1">Tahap 1: Analisis Debit &amp; Volume Air</h3>
+                            <p class="font-body-default text-sm text-text-muted">Menentukan kapasitas kubikasi riil kolam renang, kecepatan aliran filtrasi yang diizinkan (filtration rate ≤ 50 m³/h/m²), serta penentuan target siklus perputaran air (turnover time).</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start p-5 rounded-xl border border-border-hairline bg-bg-canvas">
+                        <div class="flex-shrink-0 w-9 h-9 rounded-lg bg-surface-blue text-primary font-headline-sm font-semibold flex items-center justify-center mr-4 text-sm">2</div>
+                        <div>
+                            <h3 class="font-headline-sm text-base font-semibold text-text-body mb-1">Tahap 2: Skematik Jalur Pipa &amp; Valve Manifold</h3>
+                            <p class="font-body-default text-sm text-text-muted">Penyusunan gambar kerja isometrik perpipaan lengkap dengan penataan arah slope kemiringan pipa gravitasi dan posisi manifold valve pemisah vacuum, skimmer, dan balancing tank.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start p-5 rounded-xl border border-border-hairline bg-bg-canvas">
+                        <div class="flex-shrink-0 w-9 h-9 rounded-lg bg-surface-blue text-primary font-headline-sm font-semibold flex items-center justify-center mr-4 text-sm">3</div>
+                        <div>
+                            <h3 class="font-headline-sm text-base font-semibold text-text-body mb-1">Tahap 3: Pemasangan &amp; Gluing Khusus Tekanan Tinggi</h3>
+                            <p class="font-body-default text-sm text-text-muted">Penggunaan pipa PVC kelas AW dengan primer solven dan lem khusus pipa bertekanan heavy-duty. Seluruh sambungan diampelas dan dibersihkan dari residu sebelum penyambungan.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start p-5 rounded-xl border border-border-hairline bg-surface-blue/50">
+                        <div class="flex-shrink-0 w-9 h-9 rounded-lg bg-primary text-on-primary font-headline-sm font-semibold flex items-center justify-center mr-4 text-sm">4</div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <h3 class="font-headline-sm text-base font-semibold text-text-body mb-1">Tahap 4: Hydrostatic Pressure Test (Uji Tekanan)</h3>
+                                <span class="inline-flex px-2 py-0.5 rounded text-[11px] font-label-ui bg-feedback-success/10 text-feedback-success font-semibold">Prosedur Wajib</span>
+                            </div>
+                            <p class="font-body-default text-sm text-text-muted">Pemberian tekanan udara/air pada rentang 2.5 hingga 3.0 bar menggunakan pressure test pump selama minimal 24–48 jam sebelum pengecoran beton untuk menjamin 0% risiko kebocoran tersembunyi.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start p-5 rounded-xl border border-border-hairline bg-bg-canvas">
+                        <div class="flex-shrink-0 w-9 h-9 rounded-lg bg-surface-blue text-primary font-headline-sm font-semibold flex items-center justify-center mr-4 text-sm">5</div>
+                        <div>
+                            <h3 class="font-headline-sm text-base font-semibold text-text-body mb-1">Tahap 5: Commissioning &amp; Uji Aliran Pompa Filter</h3>
+                            <p class="font-body-default text-sm text-text-muted">Pengisian media pasir silika/kaca, pembilasan awal (initial backwash &amp; rinse), pengetesan daya sedot, leveling aliran return inlet, dan pencatatan tekanan operasional awal pada manometer pressure gauge.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 FAQ Hidrolika -->
+            <div>
+                <div class="mb-6">
+                    <span class="font-label-ui text-label-ui text-primary font-semibold uppercase tracking-wider text-xs">Edukasi &amp; Tanya Jawab</span>
+                    <h2 class="font-headline-md-mobile lg:font-headline-md text-headline-md text-text-body mt-1">
+                        Pertanyaan Seputar Sirkulasi &amp; Filtrasi
+                    </h2>
+                </div>
+                <div class="space-y-3">
+                    <details class="group border border-border-hairline rounded-xl bg-bg-canvas p-5 transition duration-150 open:bg-surface-secondary/40">
+                        <summary class="flex justify-between items-center font-headline-sm text-base font-semibold text-text-body cursor-pointer list-none">
+                            <span>Berapa jam pompa kolam sebaiknya menyala dalam sehari?</span>
+                            <span class="material-symbols-outlined text-text-muted group-open:rotate-180 transition-transform duration-200">expand_more</span>
+                        </summary>
+                        <div class="mt-3 pt-3 border-t border-border-hairline text-sm font-body-default text-text-muted leading-relaxed">
+                            Untuk kolam renang pribadi di iklim tropis, durasi optimal adalah 6 hingga 8 jam per hari. Idealnya dibagi dalam dua siklus (misalnya 4 jam pagi dan 4 jam sore/malam). Kuncinya adalah memastikan seluruh volume air telah bersirkulasi minimal 1 kali putaran penuh (1 full turnover) per hari.
+                        </div>
+                    </details>
+                    <details class="group border border-border-hairline rounded-xl bg-bg-canvas p-5 transition duration-150 open:bg-surface-secondary/40">
+                        <summary class="flex justify-between items-center font-headline-sm text-base font-semibold text-text-body cursor-pointer list-none">
+                            <span>Apa perbedaan mendasar kolam skimmer dan overflow dari segi pemipaan?</span>
+                            <span class="material-symbols-outlined text-text-muted group-open:rotate-180 transition-transform duration-200">expand_more</span>
+                        </summary>
+                        <div class="mt-3 pt-3 border-t border-border-hairline text-sm font-body-default text-text-muted leading-relaxed">
+                            Pada kolam skimmer, air langsung disedot dari kotak skimmer di dinding kolam menuju pompa mesin. Pada sistem overflow, air melimpah ke parit selokan (gutter), dialirkan via pipa gravitasi menuju bak penampung (balancing tank), lalu pompa menyedot air dari balancing tank untuk disaring dan dikembalikan ke kolam.
+                        </div>
+                    </details>
+                    <details class="group border border-border-hairline rounded-xl bg-bg-canvas p-5 transition duration-150 open:bg-surface-secondary/40">
+                        <summary class="flex justify-between items-center font-headline-sm text-base font-semibold text-text-body cursor-pointer list-none">
+                            <span>Bagaimana tanda sistem sirkulasi mengalami hambatan atau kavitasi (cavitation)?</span>
+                            <span class="material-symbols-outlined text-text-muted group-open:rotate-180 transition-transform duration-200">expand_more</span>
+                        </summary>
+                        <div class="mt-3 pt-3 border-t border-border-hairline text-sm font-body-default text-text-muted leading-relaxed">
+                            Tanda utama kavitasi adalah suara gemeretak keras seperti kerikil di dalam pompa, timbulnya gelembung udara terus-menerus di return inlet, strainer basket pompa tidak terisi penuh air, serta jarum pressure gauge yang bergetar tidak stabil. Hal ini biasanya dipicu oleh kebocoran jalur hisap atau pipa suction yang tersumbat.
+                        </div>
+                    </details>
+                    <details class="group border border-border-hairline rounded-xl bg-bg-canvas p-5 transition duration-150 open:bg-surface-secondary/40">
+                        <summary class="flex justify-between items-center font-headline-sm text-base font-semibold text-text-body cursor-pointer list-none">
+                            <span>Kapan media pasir filter (sand filter) perlu diganti atau di-backwash?</span>
+                            <span class="material-symbols-outlined text-text-muted group-open:rotate-180 transition-transform duration-200">expand_more</span>
+                        </summary>
+                        <div class="mt-3 pt-3 border-t border-border-hairline text-sm font-body-default text-text-muted leading-relaxed">
+                            Backwash wajib dilakukan rutin setiap 1–2 minggu sekali, atau saat jarum manometer filter naik 8–10 psi di atas tekanan normal bersih. Sedangkan penggantian total media pasir silika direkomendasikan setiap 3 hingga 5 tahun karena partikel pasir akan tergerus halus dan kehilangan daya tangkap kotoran mikroskopis.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+
+        <!-- KOLOM KANAN (Sticky Sidebar) -->
+        <aside class="lg:col-span-4 space-y-6 lg:sticky lg:top-28">
+            <div class="p-6 rounded-xl border border-border-hairline border-t-4 border-t-primary-container bg-bg-canvas shadow-sm">
+                <div class="inline-flex items-center px-2.5 py-1 rounded bg-surface-blue text-primary font-label-ui text-xs font-semibold mb-3 border border-border-hairline">
+                    <span class="material-symbols-outlined text-sm mr-1">engineering</span>
+                    Dukungan Langsung Tim Teknis
+                </div>
+                <h2 class="font-headline-sm text-headline-sm text-text-body font-bold mb-2">
+                    Konsultasikan Sistem Kolam Anda
+                </h2>
+                <p class="font-body-default text-sm text-text-muted mb-6 leading-relaxed">
+                    Diskusikan rencana pembuatan sirkulasi baru, renovasi pipa bocor, atau peremajaan mesin filter bersama spesialis hidrolika kami sejak 1997.
+                </p>
+                <a class="w-full inline-flex items-center justify-center bg-primary-container text-on-primary font-action-button text-action-button px-4 py-3.5 rounded-lg hover:bg-action-hover transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2 mb-3 shadow-sm" href="https://wa.me/6282118075560?text=Halo%20Dunia%20Pool%20%26%20Pond,%20saya%20ingin%20konsultasi%20layanan%20sistem%20sirkulasi%20dan%20filtrasi%20kolam." rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined mr-2">chat</span>
+                    Konsultasikan via WhatsApp
+                </a>
+                <button class="w-full inline-flex items-center justify-center bg-transparent border border-border-hairline text-text-body font-action-button text-action-button px-4 py-3 rounded-lg hover:bg-surface-secondary transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2 mb-4" id="copy-format-btn" onclick="copyConsultationTemplate()" type="button">
+                    <span class="material-symbols-outlined mr-2 text-text-muted">content_copy</span>
+                    <span id="copy-btn-text">Salin Format Pesan WhatsApp</span>
+                </button>
+                <div class="border-t border-border-hairline pt-4 space-y-2 text-xs font-body-default text-text-muted">
+                    <div class="flex items-center justify-between">
+                        <span class="font-label-ui">Nomor Resmi:</span>
+                        <a class="font-semibold text-text-body hover:text-primary" href="tel:+6282118075560">0821-1807-5560</a>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="font-label-ui">WhatsApp:</span>
+                        <span class="font-mono text-text-body">+62 821-1807-5560</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="font-label-ui">Lokasi Kantor:</span>
+                        <span class="text-text-body">Padalarang, Bandung Barat</span>
+                    </div>
+                </div>
+                <div class="mt-4 p-3 rounded-lg bg-surface-secondary border border-border-hairline text-xs font-body-default text-text-muted leading-relaxed">
+                    <span class="font-semibold text-text-body">Catatan Transparan:</span> Bimbingan teknis langsung dari praktisi berpengalaman. Tanpa paksaan transaksi online dan tanpa perantara pihak ketiga.
+                </div>
+            </div>
+
+            <div class="p-6 rounded-xl border border-border-hairline bg-surface-secondary">
+                <h3 class="font-headline-sm text-sm font-bold text-text-body mb-3 flex items-center">
+                    <span class="material-symbols-outlined text-primary text-base mr-2">checklist</span>
+                    Yang Perlu Disiapkan Sebelum Konsultasi
+                </h3>
+                <p class="font-body-default text-xs text-text-muted mb-4">
+                    Agar rekomendasi pompa, filter, dan perpipaan akurat, siapkan poin estimasi berikut:
+                </p>
+                <ul class="space-y-2.5 text-xs font-body-default text-text-muted">
+                    <li class="flex items-start">
+                        <span class="material-symbols-outlined text-primary text-base mr-2 flex-shrink-0">square_foot</span>
+                        <span>Estimasi dimensi kolam (<strong class="text-text-body">Panjang × Lebar × Kedalaman rata-rata</strong>).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-symbols-outlined text-primary text-base mr-2 flex-shrink-0">water</span>
+                        <span>Tipe sirkulasi yang direncanakan (<strong class="text-text-body">Skimmer Box</strong> atau <strong class="text-text-body">Overflow / Balancing Tank</strong>).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-symbols-outlined text-primary text-base mr-2 flex-shrink-0">home_repair_service</span>
+                        <span>Lokasi ruang mesin pompa (<strong class="text-text-body">Jarak pipa &amp; elevasi terhadap bibir kolam</strong>).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-symbols-outlined text-primary text-base mr-2 flex-shrink-0">photo_camera</span>
+                        <span>Foto atau sketsa denah lokasi dan kondisi instalasi eksisting.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="p-6 rounded-xl border border-border-hairline bg-bg-canvas">
+                <h3 class="font-headline-sm text-sm font-bold text-text-body mb-3 flex items-center">
+                    <span class="material-symbols-outlined text-primary text-base mr-2">inventory_2</span>
+                    Katalog Produk Terkait
+                </h3>
+                <div class="space-y-2">
+                    <a class="group flex items-center justify-between p-3 rounded-lg border border-border-hairline hover:bg-surface-secondary transition-colors duration-150" href="/produk#pompa">
+                        <div class="flex items-center">
+                            <span class="material-symbols-outlined text-text-muted group-hover:text-primary mr-2.5 text-lg">electric_meter</span>
+                            <span class="font-label-ui text-xs font-medium text-text-body">Pompa Sirkulasi High Efficiency</span>
+                        </div>
+                        <span class="material-symbols-outlined text-sm text-outline-variant group-hover:text-primary">arrow_forward</span>
+                    </a>
+                    <a class="group flex items-center justify-between p-3 rounded-lg border border-border-hairline hover:bg-surface-secondary transition-colors duration-150" href="/produk#filter">
+                        <div class="flex items-center">
+                            <span class="material-symbols-outlined text-text-muted group-hover:text-primary mr-2.5 text-lg">filter</span>
+                            <span class="font-label-ui text-xs font-medium text-text-body">Sand Filter &amp; Glass Media Pasir</span>
+                        </div>
+                        <span class="material-symbols-outlined text-sm text-outline-variant group-hover:text-primary">arrow_forward</span>
+                    </a>
+                    <a class="group flex items-center justify-between p-3 rounded-lg border border-border-hairline hover:bg-surface-secondary transition-colors duration-150" href="/produk#fitting">
+                        <div class="flex items-center">
+                            <span class="material-symbols-outlined text-text-muted group-hover:text-primary mr-2.5 text-lg">tune</span>
+                            <span class="font-label-ui text-xs font-medium text-text-body">Fitting, Skimmer Box &amp; Inlet</span>
+                        </div>
+                        <span class="material-symbols-outlined text-sm text-outline-variant group-hover:text-primary">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<!-- Banner Layanan Terkait -->
+<section class="relative overflow-hidden border-t border-border-hairline bg-[#E9F3FB] py-14">
+    <svg aria-hidden="true" class="pointer-events-none select-none absolute right-0 bottom-0 opacity-80 z-0" width="640" height="280" viewBox="0 0 640 280" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 220 C140 120, 290 250, 440 155 C525 100, 585 60, 640 30 L640 280 L0 280 Z" fill="#076aa7" fill-opacity="0.06" /><path d="M0 245 C160 155, 310 265, 470 175 C545 130, 600 95, 640 70 L640 280 L0 280 Z" fill="#005182" fill-opacity="0.06" /><path d="M20 210 C150 110, 300 235, 455 140 C535 90, 595 45, 640 20" stroke="#076aa7" stroke-opacity="0.16" stroke-width="1.5" /><path d="M60 245 C190 150, 340 255, 495 165 C565 125, 610 90, 640 65" stroke="#076aa7" stroke-opacity="0.11" stroke-width="1" /></svg>    <div class="max-w-[1240px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop relative z-10">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+            <div>
+                <span class="font-label-ui text-label-ui text-primary font-semibold uppercase tracking-wider text-xs">Eksplorasi Keahlian</span>
+                <h2 class="font-headline-md-mobile lg:font-headline-md text-headline-md text-text-body mt-1">
+                    Layanan Teknik Lainnya
+                </h2>
+            </div>
+            <p class="font-body-default text-sm text-text-muted mt-2 md:mt-0 max-w-md">
+                Sinergi menyeluruh dari konstruksi sipil bergaransi hingga perawatan kimia teruji sejak 1997.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <a class="group block p-6 rounded-xl border border-border-hairline bg-bg-canvas hover:border-primary/50 transition duration-150 shadow-sm relative overflow-hidden" href="/#layanan">
+                <div class="absolute top-0 left-0 right-0 h-0.5 bg-border-hairline group-hover:bg-primary transition-colors duration-150"></div>
+                <div class="w-10 h-10 rounded-lg bg-surface-blue text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-on-primary transition-colors duration-150">
+                    <span class="material-symbols-outlined">foundation</span>
+                </div>
+                <h3 class="font-headline-sm text-base font-semibold text-text-body group-hover:text-primary mb-1">Konstruksi Kolam Renang</h3>
+                <p class="font-body-default text-xs text-text-muted leading-relaxed">Struktur beton bertulang K-350 kedap air dengan metode waterproofing elastis garansi struktur.</p>
+            </a>
+            <a class="group block p-6 rounded-xl border border-border-hairline bg-bg-canvas hover:border-primary/50 transition duration-150 shadow-sm relative overflow-hidden" href="/#layanan">
+                <div class="absolute top-0 left-0 right-0 h-0.5 bg-border-hairline group-hover:bg-primary transition-colors duration-150"></div>
+                <div class="w-10 h-10 rounded-lg bg-surface-blue text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-on-primary transition-colors duration-150">
+                    <span class="material-symbols-outlined">architecture</span>
+                </div>
+                <h3 class="font-headline-sm text-base font-semibold text-text-body group-hover:text-primary mb-1">Desain &amp; Konsultasi</h3>
+                <p class="font-body-default text-xs text-text-muted leading-relaxed">Gambar kerja arsitektur 3D, kalkulasi hidrolika, dan rancangan sistem pencahayaan bawah air.</p>
+            </a>
+            <a class="group block p-6 rounded-xl border border-border-hairline bg-bg-canvas hover:border-primary/50 transition duration-150 shadow-sm relative overflow-hidden" href="/#layanan">
+                <div class="absolute top-0 left-0 right-0 h-0.5 bg-border-hairline group-hover:bg-primary transition-colors duration-150"></div>
+                <div class="w-10 h-10 rounded-lg bg-surface-blue text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-on-primary transition-colors duration-150">
+                    <span class="material-symbols-outlined">cleaning_services</span>
+                </div>
+                <h3 class="font-headline-sm text-base font-semibold text-text-body group-hover:text-primary mb-1">Perawatan &amp; Pembersihan</h3>
+                <p class="font-body-default text-xs text-text-muted leading-relaxed">Layanan berkala vacuuming, backwash rutin, pengujian pH/Chlorine, dan sikat lumut dasar kolam.</p>
+            </a>
+            <a class="group block p-6 rounded-xl border border-border-hairline bg-bg-canvas hover:border-primary/50 transition duration-150 shadow-sm relative overflow-hidden" href="/#layanan">
+                <div class="absolute top-0 left-0 right-0 h-0.5 bg-border-hairline group-hover:bg-primary transition-colors duration-150"></div>
+                <div class="w-10 h-10 rounded-lg bg-surface-blue text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-on-primary transition-colors duration-150">
+                    <span class="material-symbols-outlined">science</span>
+                </div>
+                <h3 class="font-headline-sm text-base font-semibold text-text-body group-hover:text-primary mb-1">Pengolahan Air &amp; Kimia</h3>
+                <p class="font-body-default text-xs text-text-muted leading-relaxed">Penjernihan air awal (water treatment), garam klorinasi saltwater chlorinator, dan penyeimbang mineral.</p>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- FOOTER (Biru Brand Konsisten #076aa7) -->
+<footer class="bg-primary-container text-white border-t border-primary/20 docked full-width bottom-0 mt-auto">
+    <div class="w-full max-w-[1240px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/20">
+            <!-- Brand identity kolom 4 -->
+            <div class="lg:col-span-4 space-y-4">
+                <div class="bg-white px-4 py-3 inline-flex items-center gap-3.5 rounded-xl shadow-sm">
+                    <img
+                        alt=""
+                        aria-hidden="true"
+                        class="h-9 w-auto shrink-0 object-contain"
+                        height="36"
+                        src="/images/brand/logo-dpp.png"
+                        width="52"
+                    />
+                    <div>
+                        <span class="text-base font-headline-sm text-text-body tracking-tight uppercase block leading-tight font-extrabold">Dunia Pool &amp; Pond</span>
+                        <span class="text-[11px] text-text-muted tracking-wide font-semibold block">The Pool Specialist — Est. 1997</span>
+                    </div>
+                </div>
+                <p class="text-sm text-white/90 leading-relaxed">
+                    Spesialis konstruksi kolam renang, perancangan hidrolika, pengadaan peralatan filter, dan pemeliharaan air profesional.
+                </p>
+                <div class="text-xs text-white/85 space-y-1.5 pt-1">
+                    <p class="flex items-start gap-2">
+                        <span aria-hidden="true" class="material-symbols-outlined text-[15px] text-primary-fixed mt-0.5 shrink-0">location_on</span>
+                        <a class="hover:text-white underline decoration-primary-fixed/50 hover:decoration-white transition-colors" href="https://www.google.com/maps/place/Alat+Kolam+Renang+Bandung+Barat/data=!4m2!3m1!1s0x2e68e331a6058d93:0x6f8552486c06e786?sa=X&amp;ved=1t:242&amp;hl=id&amp;ictx=111" rel="noopener noreferrer" target="_blank">Padalarang, Kabupaten Bandung Barat, Jawa Barat</a>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <span aria-hidden="true" class="material-symbols-outlined text-[15px] text-primary-fixed">schedule</span>
+                        <span>Senin – Sabtu, 08:00 – 17:00 WIB</span>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <span aria-hidden="true" class="material-symbols-outlined text-[15px] text-primary-fixed">call</span>
+                        <span>WhatsApp: +6282118075560</span>
+                    </p>
+                </div>
+            </div>
+            <!-- Kolom Navigasi Cepat -->
+            <div class="lg:col-span-2 space-y-3">
+                <p class="text-xs font-bold uppercase tracking-widest text-white">Navigasi</p>
+                <ul class="space-y-2 text-sm text-white/85">
+                    <li><a class="hover:text-white transition-colors" href="/">Beranda</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/#tentang-kami">Tentang Kami</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/layanan">Layanan Hidrolika</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/#proyek">Dokumentasi Proyek</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/#manajemen-proyek">Manajemen Proyek</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/produk">Katalog Produk</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/#kontak">Kontak Teknis</a></li>
+                </ul>
+            </div>
+            <!-- Kolom Layanan Spesifik -->
+            <div class="lg:col-span-3 space-y-3">
+                <p class="text-xs font-bold uppercase tracking-widest text-white">Layanan &amp; Produk</p>
+                <ul class="space-y-2 text-sm text-white/85">
+                    <li><a class="hover:text-white transition-colors" href="/#layanan">Desain &amp; Konsultasi</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/#layanan">Konstruksi Kolam Renang</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/#layanan">Renovasi &amp; Perbaikan</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/layanan">Sistem Sirkulasi &amp; Filtrasi</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/produk#pompa">Pompa Sirkulasi Kolam</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/produk#chemical">Perawatan &amp; Bahan Kimia</a></li>
+                </ul>
+            </div>
+            <!-- Kolom Legal & Saluran Resmi -->
+            <div class="lg:col-span-3 space-y-3">
+                <p class="text-xs font-bold uppercase tracking-widest text-white">Kontak &amp; Sosial</p>
+                <p class="text-sm text-white/90 leading-relaxed">
+                    WhatsApp Resmi:<br />
+                    <a class="text-white font-bold underline decoration-primary-fixed/70 hover:decoration-white" href="https://wa.me/6282118075560" rel="noopener noreferrer" target="_blank">
+                        0821-1807-5560
+                    </a>
+                </p>
+                <p class="text-sm text-white/90">
+                    Instagram:<br />
+                    <a class="text-white font-bold underline decoration-primary-fixed/70 hover:decoration-white" href="https://www.instagram.com/duniapoolnpond/" rel="noopener noreferrer" target="_blank">
+                        @duniapoolnpond
+                    </a>
+                </p>
+                <div class="pt-2 text-xs text-white/80 leading-relaxed">
+                    Tersedia untuk konsultasi teknis spesifik &amp; pemeriksaan hidrolika di wilayah Bandung Raya, Jawa Barat &amp; proyek khusus antar kota.
+                </div>
+            </div>
+        </div>
+        <!-- Copyright Bottom Bar -->
+        <div class="pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-white/85 gap-4">
+            <p>© 1997–2026 Dunia Pool &amp; Pond. The Pool Specialist. Padalarang, Bandung Barat.</p>
+            <div class="flex space-x-6">
+                <a class="hover:text-white transition-colors" href="/kebijakan-privasi">Kebijakan Privasi</a>
+                <a class="hover:text-white transition-colors" href="/ketentuan-layanan">Ketentuan Layanan</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Back to top button -->
+<button
+    aria-label="Kembali ke atas halaman"
+    class="fixed bottom-6 right-6 z-40 w-11 h-11 rounded-full bg-primary-container hover:bg-action-hover text-white border border-white/30 shadow-lg flex items-center justify-center opacity-0 pointer-events-none translate-y-2 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2"
+    id="backToTopBtn"
+    title="Kembali ke atas"
+    type="button"
+>
+    <span aria-hidden="true" class="material-symbols-outlined text-xl">keyboard_arrow_up</span>
+</button>
+<script>
+    (function () {
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const mobileNav = document.getElementById('mobileMenu');
+        if (mobileBtn && mobileNav) {
+            mobileBtn.addEventListener('click', () => {
+                const isHidden = mobileNav.classList.toggle('hidden');
+                mobileBtn.setAttribute('aria-expanded', String(!isHidden));
+            });
+            mobileNav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileNav.classList.add('hidden');
+                    mobileBtn.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
+        const backToTopBtn = document.getElementById('backToTopBtn');
+        if (backToTopBtn) {
+            const toggleBackToTop = () => {
+                if (window.scrollY > 420) {
+                    backToTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-2');
+                    backToTopBtn.classList.add('opacity-100', 'translate-y-0');
+                } else {
+                    backToTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-2');
+                    backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
+                }
+            };
+            window.addEventListener('scroll', toggleBackToTop, { passive: true });
+            toggleBackToTop();
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+            });
+        }
+
+        const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const desktopNav = document.getElementById('desktopNav');
+        const navSlider = document.getElementById('navActiveSlider');
+        const desktopLinks = desktopNav ? Array.from(desktopNav.querySelectorAll('.nav-link')) : [];
+        const mobileLinks = Array.from(document.querySelectorAll('.mobile-nav-link'));
+        let activeNavKey = desktopNav ? (desktopNav.getAttribute('data-initial-active') || '') : '';
+
+        if (navSlider && prefersReduced) {
+            navSlider.classList.remove('transition-all', 'duration-200', 'ease-out');
+        }
+
+        function positionNavSlider(targetLink) {
+            if (!desktopNav || !navSlider) return;
+            if (!targetLink || desktopNav.offsetParent === null) {
+                navSlider.style.opacity = '0';
+                return;
+            }
+            const left = targetLink.offsetLeft;
+            const width = targetLink.offsetWidth;
+            navSlider.style.transform = `translateX(${left}px)`;
+            navSlider.style.width = `${width}px`;
+            navSlider.style.opacity = '1';
+        }
+
+        function setActiveNav(key) {
+            if (!key && activeNavKey === '') {
+                positionNavSlider(null);
+                return;
+            }
+            activeNavKey = key;
+            let activeDesktopLink = null;
+
+            desktopLinks.forEach(link => {
+                const isMatch = link.getAttribute('data-nav-key') === key;
+                link.classList.remove('border-primary', 'dark:border-inverse-primary');
+                link.classList.add('border-transparent');
+                if (isMatch) {
+                    link.classList.remove('text-text-muted', 'dark:text-outline-variant');
+                    link.classList.add('text-primary', 'dark:text-inverse-primary', 'font-semibold');
+                    link.setAttribute('aria-current', 'page');
+                    activeDesktopLink = link;
+                } else {
+                    link.classList.remove('text-primary', 'dark:text-inverse-primary', 'font-semibold');
+                    link.classList.add('text-text-muted', 'dark:text-outline-variant');
+                    link.removeAttribute('aria-current');
+                }
+            });
+
+            mobileLinks.forEach(link => {
+                const isMatch = link.getAttribute('data-nav-key') === key;
+                if (isMatch) {
+                    link.classList.remove('text-text-body', 'border-transparent');
+                    link.classList.add('text-primary', 'border-primary', 'font-semibold');
+                    link.setAttribute('aria-current', 'page');
+                } else {
+                    link.classList.remove('text-primary', 'border-primary', 'font-semibold');
+                    link.classList.add('text-text-body', 'border-transparent');
+                    link.removeAttribute('aria-current');
+                }
+            });
+
+            requestAnimationFrame(() => positionNavSlider(activeDesktopLink));
+        }
+
+        if (desktopLinks.length > 0) {
+            setActiveNav(activeNavKey);
+            window.addEventListener('resize', () => {
+                const currentLink = desktopLinks.find(l => l.getAttribute('data-nav-key') === activeNavKey) || null;
+                positionNavSlider(currentLink);
+            });
+            if (document.fonts && document.fonts.ready) {
+                document.fonts.ready.then(() => {
+                    const currentLink = desktopLinks.find(l => l.getAttribute('data-nav-key') === activeNavKey) || null;
+                    positionNavSlider(currentLink);
+                });
+            }
+        }
+
+        const sectionMappings = [
+            { id: 'beranda', key: 'beranda' },
+            { id: 'tentang-kami', key: 'tentang' },
+            { id: 'layanan', key: 'layanan' },
+            { id: 'proyek', key: 'proyek' },
+            { id: 'manajemen-proyek', key: 'manajemen' },
+            { id: 'produk', key: 'produk' },
+            { id: 'konsultasi', key: 'kontak' },
+        ].map(item => ({
+            key: item.key,
+            el: document.getElementById(item.id),
+        })).filter(item => item.el !== null);
+
+        if (sectionMappings.length > 1) {
+            const headerEl = document.querySelector('header');
+            let scrollTicking = false;
+
+            const updateScrollSpy = () => {
+                scrollTicking = false;
+                const headerHeight = headerEl ? headerEl.offsetHeight : 80;
+                const triggerOffset = headerHeight + 56;
+                const nearBottom = (window.innerHeight + window.scrollY) >= (document.documentElement.scrollHeight - 40);
+
+                let nextKey = sectionMappings[0].key;
+                if (nearBottom) {
+                    nextKey = sectionMappings[sectionMappings.length - 1].key;
+                } else {
+                    for (let i = 0; i < sectionMappings.length; i++) {
+                        const rect = sectionMappings[i].el.getBoundingClientRect();
+                        if (rect.top <= triggerOffset) {
+                            nextKey = sectionMappings[i].key;
+                        }
+                    }
+                }
+
+                if (nextKey !== activeNavKey) {
+                    setActiveNav(nextKey);
+                }
+            };
+
+            window.addEventListener('scroll', () => {
+                if (!scrollTicking) {
+                    scrollTicking = true;
+                    requestAnimationFrame(updateScrollSpy);
+                }
+            }, { passive: true });
+            window.addEventListener('hashchange', () => setTimeout(updateScrollSpy, 60));
+            window.addEventListener('load', updateScrollSpy);
+            updateScrollSpy();
+        }
+
+        const sectionParam = new URLSearchParams(window.location.search).get('section');
+        if (sectionParam) {
+            const targetSection = document.getElementById(sectionParam);
+            if (targetSection) {
+                requestAnimationFrame(() => targetSection.scrollIntoView({ behavior: prefersReduced ? 'auto' : 'smooth' }));
+            }
+        }
+
+        const revealEls = document.querySelectorAll('.reveal-item');
+        if (!prefersReduced && 'IntersectionObserver' in window && revealEls.length > 0) {
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.remove('is-hidden-reveal');
+                        entry.target.classList.add('is-visible-reveal');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+            revealEls.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top > window.innerHeight * 0.95) {
+                    el.classList.add('is-hidden-reveal');
+                    observer.observe(el);
+                } else {
+                    el.classList.add('is-visible-reveal');
+                }
+            });
+        }
+    })();
+</script>
+    <script>
+    function copyConsultationTemplate() {
+        const templateText = `Halo Dunia Pool & Pond (The Pool Specialist),
+Saya ingin berkonsultasi mengenai Layanan Sistem Sirkulasi & Filtrasi Kolam:
+
+- Estimasi Ukuran Kolam: [P x L x Kedalaman]
+- Tipe Sirkulasi: [Skimmer / Overflow / Belum Tahu]
+- Rencana Lokasi Mesin: [Jarak & Elevasi]
+- Lokasi Proyek: [Kota / Wilayah]
+- Kebutuhan: [Pemasangan Baru / Renovasi Pipa / Ganti Mesin Filter]
+
+Mohon saran dan penjadwalan konsultasi teknisnya. Terima kasih.`;
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(templateText).then(() => {
+                const btnText = document.getElementById('copy-btn-text');
+                const originalText = btnText.innerText;
+                btnText.innerText = "✓ Format Berhasil Disalin!";
+                btnText.parentElement.classList.add('bg-surface-blue', 'text-primary');
+
+                setTimeout(() => {
+                    btnText.innerText = originalText;
+                    btnText.parentElement.classList.remove('bg-surface-blue', 'text-primary');
+                }, 3000);
+            }).catch(() => {
+                window.prompt("Salin format pesan berikut secara manual:", templateText);
+            });
+        } else {
+            window.prompt("Salin format pesan berikut secara manual:", templateText);
+        }
+    }
+</script></body>
+</html>
+

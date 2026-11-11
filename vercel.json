@@ -1,0 +1,41 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "mkdir -p dist && rm -rf dist/images dist/video && cp -r images video dist/",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/video/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" }
+      ]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" }
+      ]
+    }
+  ],
+  "redirects": [
+    { "source": "/beranda", "destination": "/", "permanent": false },
+    { "source": "/index.php", "destination": "/", "permanent": false },
+    { "source": "/tentang-kami", "destination": "/?section=tentang-kami", "permanent": false },
+    { "source": "/proyek", "destination": "/?section=proyek", "permanent": false },
+    { "source": "/manajemen-proyek", "destination": "/?section=manajemen-proyek", "permanent": false },
+    { "source": "/kontak", "destination": "/?section=kontak", "permanent": false },
+    { "source": "/konsultasi", "destination": "/?section=konsultasi", "permanent": false },
+    { "source": "/produk/pompa-sirkulasi", "destination": "/produk?kategori=pompa", "permanent": false },
+    { "source": "/produk/pompa-kolam", "destination": "/produk?kategori=pompa", "permanent": false },
+    { "source": "/produk/sand-filter", "destination": "/produk?kategori=filter", "permanent": false },
+    { "source": "/produk/skimmer-box", "destination": "/produk?kategori=fittings", "permanent": false },
+    { "source": "/produk/fitting-kolam", "destination": "/produk?kategori=fittings", "permanent": false },
+    { "source": "/layanan/sistem-sirkulasi-filtrasi", "destination": "/layanan", "permanent": false },
+    { "source": "/layanan/konstruksi-kolam-renang", "destination": "/?section=layanan", "permanent": false },
+    { "source": "/layanan/desain-konsultasi", "destination": "/?section=layanan", "permanent": false },
+    { "source": "/layanan/perawatan-kolam", "destination": "/?section=layanan", "permanent": false },
+    { "source": "/layanan/pengolahan-air", "destination": "/?section=layanan", "permanent": false }
+  ]
+}

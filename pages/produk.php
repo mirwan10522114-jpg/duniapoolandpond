@@ -472,7 +472,8 @@ $pageScripts = <<<'HTML'
         resetBtn.addEventListener('click', window.resetAllFilters);
 
         function applyHashFilter() {
-            const hash = window.location.hash.replace('#', '').toLowerCase();
+            const paramCat = new URLSearchParams(window.location.search).get('kategori') || '';
+            const hash = (window.location.hash.replace('#', '') || paramCat).toLowerCase();
             if (!hash) return;
             applyCategoryFilter(hash, true);
         }

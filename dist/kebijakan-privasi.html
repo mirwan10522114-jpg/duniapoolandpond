@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Kebijakan Privasi | Dunia Pool &amp; Pond</title>
+    <link href="/images/brand/favicon-dpp.png" rel="icon" type="image/png" />
+    <!-- Google Fonts: Inter (Formal Corporate Neo-Grotesk) -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <!-- Material Symbols Outlined -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <!-- Tailwind CSS with Forms and Container Queries -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#f9f9ff",
+                        "primary-fixed": "#cfe5ff",
+                        "error-container": "#ffdad6",
+                        "border-hairline": "#D5E2EC",
+                        "background": "#f9f9ff",
+                        "tertiary-container": "#006f88",
+                        "inverse-primary": "#98cbff",
+                        "on-secondary-fixed": "#001d33",
+                        "on-tertiary": "#ffffff",
+                        "action-hover": "#055887",
+                        "tertiary": "#005569",
+                        "secondary-fixed": "#cee5ff",
+                        "on-surface": "#001c3b",
+                        "text-body": "#142D46",
+                        "on-tertiary-fixed": "#001f28",
+                        "surface-tint": "#00639d",
+                        "on-error": "#ffffff",
+                        "primary-container": "#076aa7",
+                        "inverse-surface": "#0B2545",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#004a76",
+                        "secondary": "#00639b",
+                        "on-tertiary-container": "#bbecff",
+                        "surface-dim": "#c7dbff",
+                        "tertiary-fixed-dim": "#5bd5fb",
+                        "surface-container-high": "#dee8ff",
+                        "tertiary-fixed": "#b6eaff",
+                        "feedback-success": "#146C43",
+                        "secondary-container": "#63b7fe",
+                        "surface-container-highest": "#d5e3ff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#f0f3ff",
+                        "on-primary-container": "#d2e6ff",
+                        "on-surface-variant": "#404750",
+                        "surface-blue": "#E9F4FB",
+                        "outline-variant": "#c0c7d1",
+                        "primary": "#005182",
+                        "outline": "#717881",
+                        "surface": "#f9f9ff",
+                        "on-primary-fixed": "#001d33",
+                        "surface-variant": "#d5e3ff",
+                        "text-muted": "#526274",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#98cbff",
+                        "on-tertiary-fixed-variant": "#004e60",
+                        "secondary-fixed-dim": "#96cbff",
+                        "border-control": "#6D8298",
+                        "surface-secondary": "#F3F8FC",
+                        "on-secondary-container": "#004771",
+                        "on-background": "#001c3b",
+                        "surface-container": "#e7eeff",
+                        "on-primary-fixed-variant": "#004a77",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#ebf1ff",
+                        "bg-canvas": "#FFFFFF",
+                        "feedback-error": "#B42318"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "space-xs": "0.25rem",
+                        "space-xl": "2rem",
+                        "gutter-desktop": "3rem",
+                        "space-sm": "0.5rem",
+                        "gutter": "1.5rem",
+                        "gutter-mobile": "1.25rem",
+                        "margin-tablet": "2rem",
+                        "margin": "1.25rem",
+                        "gutter-tablet": "2rem",
+                        "space-lg": "1.5rem",
+                        "margin-desktop": "3rem",
+                        "space-md": "1rem"
+                    },
+                    "fontFamily": {
+                        "sans": ["Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "sans-serif"],
+                        "serif": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "mono": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "headline-lg-mobile": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "headline-md": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "display-hero": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "body-default": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "headline-sm-mobile": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "body-lead-mobile": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "headline-md-mobile": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "headline-lg": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "headline-sm": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "action-button": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "label-ui": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "display-hero-mobile": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+                        "body-lead": ["Inter", "system-ui", "-apple-system", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["34px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-hero": ["54px", { "lineHeight": "1.08", "letterSpacing": "-0.025em", "fontWeight": "800" }],
+                        "body-default": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+                        "headline-sm-mobile": ["20px", { "lineHeight": "1.3", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+                        "body-lead-mobile": ["17px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+                        "headline-md-mobile": ["28px", { "lineHeight": "1.22", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["46px", { "lineHeight": "1.12", "letterSpacing": "-0.025em", "fontWeight": "800" }],
+                        "headline-sm": ["22px", { "lineHeight": "1.3", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+                        "action-button": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" }],
+                        "label-ui": ["14px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "500" }],
+                        "display-hero-mobile": ["36px", { "lineHeight": "1.14", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-lead": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html, body, button, input, select, textarea {
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            text-rendering: optimizeLegibility;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            letter-spacing: -0.02em;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px #076aa7;
+            border-color: #076aa7;
+        }
+        :focus-visible {
+            outline: 3px solid #076AA7;
+            outline-offset: 2px;
+        }
+        .grid-architectural {
+            background-image:
+                linear-gradient(to right, rgba(7, 106, 167, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(7, 106, 167, 0.05) 1px, transparent 1px);
+            background-size: 56px 56px;
+        }
+        .pattern-halftone-tr {
+            background-image: radial-gradient(rgba(7, 106, 167, 0.24) 1.75px, transparent 1.75px);
+            background-size: 14px 14px;
+            -webkit-mask-image: radial-gradient(ellipse 85% 85% at 100% 0%, #000 15%, rgba(0, 0, 0, 0.4) 55%, transparent 85%);
+            mask-image: radial-gradient(ellipse 85% 85% at 100% 0%, #000 15%, rgba(0, 0, 0, 0.4) 55%, transparent 85%);
+        }
+        .pattern-halftone-bl {
+            background-image: radial-gradient(rgba(7, 106, 167, 0.22) 1.75px, transparent 1.75px);
+            background-size: 14px 14px;
+            -webkit-mask-image: radial-gradient(ellipse 85% 85% at 0% 100%, #000 15%, rgba(0, 0, 0, 0.4) 55%, transparent 85%);
+            mask-image: radial-gradient(ellipse 85% 85% at 0% 100%, #000 15%, rgba(0, 0, 0, 0.4) 55%, transparent 85%);
+        }
+        .pattern-diagonal-grid {
+            background-image: repeating-linear-gradient(
+                -45deg,
+                rgba(7, 106, 167, 0.035) 0px,
+                rgba(7, 106, 167, 0.035) 1px,
+                transparent 1px,
+                transparent 18px
+            );
+        }
+        .text-balance {
+            text-wrap: balance;
+        }
+        [id="beranda"],
+        [id="tentang-kami"],
+        [id="layanan"],
+        [id="proyek"],
+        [id="manajemen-proyek"],
+        [id="produk"],
+        [id="faq"],
+        [id="konsultasi"],
+        [id="kontak"] {
+            scroll-margin-top: 84px;
+        }
+        .reveal-item {
+            transition: opacity 0.32s ease-out, transform 0.32s ease-out;
+        }
+        .reveal-item.is-hidden-reveal {
+            opacity: 0;
+            transform: translateY(8px);
+        }
+        .reveal-item.is-visible-reveal {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto !important;
+            }
+            .reveal-item,
+            .reveal-item.is-hidden-reveal {
+                opacity: 1 !important;
+                transform: none !important;
+                transition: none !important;
+            }
+        }
+            </style>
+</head>
+<body class="bg-bg-canvas text-text-body font-body-default antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+
+<a class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:px-4 focus:py-2 focus:bg-primary-container focus:text-white focus:rounded-lg focus:text-sm focus:font-semibold focus:shadow-lg" href="#main-content">
+    Lewati ke konten utama
+</a>
+<!-- TopNavBar -->
+<header class="bg-bg-canvas/95 backdrop-blur-md dark:bg-inverse-surface border-b border-border-hairline dark:border-outline-variant shadow-[0_4px_20px_rgba(7,106,167,0.06)] dark:shadow-none docked full-width top-0 sticky z-50 transition-colors duration-150">
+    <div class="flex justify-between items-center w-full mx-auto px-5 sm:px-8 lg:px-8 xl:px-12 2xl:px-16 gap-4 xl:gap-8 h-20">
+        <!-- Brand Logo Anchor -->
+        <a class="flex items-center gap-3 sm:gap-3.5 text-left shrink-0 group focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2 rounded-lg py-1 pr-2" href="/">
+            <img
+                alt=""
+                aria-hidden="true"
+                class="h-9 sm:h-10 w-auto shrink-0 object-contain"
+                height="38"
+                src="/images/brand/logo-dpp.png"
+                width="56"
+            />
+            <div class="flex flex-col">
+                <span class="text-base sm:text-lg xl:text-xl font-headline-sm text-text-body dark:text-inverse-on-surface tracking-tight uppercase leading-tight font-extrabold whitespace-nowrap group-hover:text-primary transition-colors">Dunia Pool &amp; Pond</span>
+                <span class="text-[11px] sm:text-xs font-label-ui text-text-muted tracking-wide font-medium whitespace-nowrap">The Pool Specialist — Sejak 1997</span>
+            </div>
+        </a>
+        <!-- Desktop Navigation Links -->
+        <nav aria-label="Navigasi Utama" class="relative hidden lg:flex items-center gap-x-3 xl:gap-x-7 2xl:gap-x-10" data-initial-active="" id="desktopNav">
+                                            <a
+                                        class="nav-link relative pb-1 font-action-button text-sm xl:text-[15px] whitespace-nowrap border-b-2 transition-colors duration-150 text-text-muted dark:text-outline-variant border-transparent hover:text-primary dark:hover:text-inverse-primary"
+                    data-nav-key="beranda"
+                    href="/"
+                >Beranda</a>
+                                            <a
+                                        class="nav-link relative pb-1 font-action-button text-sm xl:text-[15px] whitespace-nowrap border-b-2 transition-colors duration-150 text-text-muted dark:text-outline-variant border-transparent hover:text-primary dark:hover:text-inverse-primary"
+                    data-nav-key="tentang"
+                    href="/#tentang-kami"
+                >Tentang Kami</a>
+                                            <a
+                                        class="nav-link relative pb-1 font-action-button text-sm xl:text-[15px] whitespace-nowrap border-b-2 transition-colors duration-150 text-text-muted dark:text-outline-variant border-transparent hover:text-primary dark:hover:text-inverse-primary"
+                    data-nav-key="layanan"
+                    href="/layanan"
+                >Layanan</a>
+                                            <a
+                                        class="nav-link relative pb-1 font-action-button text-sm xl:text-[15px] whitespace-nowrap border-b-2 transition-colors duration-150 text-text-muted dark:text-outline-variant border-transparent hover:text-primary dark:hover:text-inverse-primary"
+                    data-nav-key="proyek"
+                    href="/#proyek"
+                >Proyek</a>
+                                            <a
+                                        class="nav-link relative pb-1 font-action-button text-sm xl:text-[15px] whitespace-nowrap border-b-2 transition-colors duration-150 text-text-muted dark:text-outline-variant border-transparent hover:text-primary dark:hover:text-inverse-primary"
+                    data-nav-key="manajemen"
+                    href="/#manajemen-proyek"
+                >Manajemen</a>
+                                            <a
+                                        class="nav-link relative pb-1 font-action-button text-sm xl:text-[15px] whitespace-nowrap border-b-2 transition-colors duration-150 text-text-muted dark:text-outline-variant border-transparent hover:text-primary dark:hover:text-inverse-primary"
+                    data-nav-key="produk"
+                    href="/produk"
+                >Produk</a>
+                                            <a
+                                        class="nav-link relative pb-1 font-action-button text-sm xl:text-[15px] whitespace-nowrap border-b-2 transition-colors duration-150 text-text-muted dark:text-outline-variant border-transparent hover:text-primary dark:hover:text-inverse-primary"
+                    data-nav-key="kontak"
+                    href="/#kontak"
+                >Kontak</a>
+                        <span
+                aria-hidden="true"
+                class="pointer-events-none absolute bottom-0 left-0 !ml-0 h-[2px] w-0 bg-primary dark:bg-inverse-primary rounded-full transition-all duration-200 ease-out opacity-0"
+                id="navActiveSlider"
+            ></span>
+        </nav>
+        <!-- Trailing Action & Mobile Toggle -->
+        <div class="flex items-center shrink-0 space-x-3">
+            <a class="hidden sm:inline-flex items-center justify-center gap-2 bg-primary-container hover:bg-action-hover text-on-primary font-action-button text-sm px-4 xl:px-5 h-11 rounded-lg whitespace-nowrap transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2 shadow-sm hover:shadow font-semibold" href="/#konsultasi">
+                <span aria-hidden="true" class="material-symbols-outlined text-[18px]">chat</span>
+                <span>Konsultasi Proyek</span>
+            </a>
+            <button aria-expanded="false" aria-label="Buka navigasi menu" class="lg:hidden p-2 text-text-body hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary-container rounded-lg" id="mobileMenuBtn" type="button">
+                <span aria-hidden="true" class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+        </div>
+    </div>
+    <!-- Mobile Nav Drawer -->
+    <div class="hidden lg:hidden border-t border-border-hairline bg-bg-canvas px-margin py-4 space-y-2 shadow-lg" id="mobileMenu">
+                                <a
+                                class="mobile-nav-link block py-2 font-action-button pl-3 transition-colors text-text-body border-l-4 border-transparent hover:text-primary"
+                data-nav-key="beranda"
+                href="/"
+            >Beranda</a>
+                                <a
+                                class="mobile-nav-link block py-2 font-action-button pl-3 transition-colors text-text-body border-l-4 border-transparent hover:text-primary"
+                data-nav-key="tentang"
+                href="/#tentang-kami"
+            >Tentang Kami</a>
+                                <a
+                                class="mobile-nav-link block py-2 font-action-button pl-3 transition-colors text-text-body border-l-4 border-transparent hover:text-primary"
+                data-nav-key="layanan"
+                href="/layanan"
+            >Layanan</a>
+                                <a
+                                class="mobile-nav-link block py-2 font-action-button pl-3 transition-colors text-text-body border-l-4 border-transparent hover:text-primary"
+                data-nav-key="proyek"
+                href="/#proyek"
+            >Proyek</a>
+                                <a
+                                class="mobile-nav-link block py-2 font-action-button pl-3 transition-colors text-text-body border-l-4 border-transparent hover:text-primary"
+                data-nav-key="manajemen"
+                href="/#manajemen-proyek"
+            >Manajemen</a>
+                                <a
+                                class="mobile-nav-link block py-2 font-action-button pl-3 transition-colors text-text-body border-l-4 border-transparent hover:text-primary"
+                data-nav-key="produk"
+                href="/produk"
+            >Produk</a>
+                                <a
+                                class="mobile-nav-link block py-2 font-action-button pl-3 transition-colors text-text-body border-l-4 border-transparent hover:text-primary"
+                data-nav-key="kontak"
+                href="/#kontak"
+            >Kontak</a>
+                <div class="pt-2 border-t border-border-hairline sm:hidden">
+            <a class="inline-flex w-full items-center justify-center bg-primary-container hover:bg-action-hover text-on-primary font-action-button px-5 h-11 rounded-lg transition-colors duration-150 font-semibold" href="/#konsultasi">
+                Konsultasi Proyek
+            </a>
+        </div>
+    </div>
+</header>
+
+<main class="max-w-[1240px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-12 lg:py-16 min-h-[60vh]" id="main-content">
+    <nav aria-label="Breadcrumb" class="flex items-center text-label-ui font-label-ui text-text-muted mb-6">
+        <a class="hover:text-primary transition-colors" href="/">Beranda</a>
+        <span class="mx-2 text-border-control">/</span>
+        <span aria-current="page" class="text-text-body font-medium">Kebijakan Privasi</span>
+    </nav>
+
+    <div class="max-w-3xl bg-bg-canvas border border-border-hairline rounded-2xl p-6 md:p-10 shadow-sm space-y-6">
+        <div class="border-b border-border-hairline pb-5">
+            <h1 class="text-headline-md-mobile md:text-headline-md font-headline-md text-text-body">Kebijakan Privasi</h1>
+            <p class="text-body-default text-text-muted mt-2">Penanganan informasi konsultasi teknis dan kontak resmi Dunia Pool &amp; Pond.</p>
+        </div>
+
+        <div class="space-y-6">
+                            <section>
+                    <h2 class="text-headline-sm-mobile font-headline-sm text-text-body mb-2">1. Pengumpulan Informasi Konsultasi</h2>
+                    <p class="text-body-default text-text-muted leading-relaxed">Website Dunia Pool &amp; Pond tidak menyimpan data pribadi pengunjung ke dalam basis data pelacakan otomatis. Seluruh informasi yang Anda isikan pada formulir konsultasi hanya diformat di browser Anda untuk disalurkan langsung ke WhatsApp resmi kami (+62 821-1807-5560).</p>
+                </section>
+                            <section>
+                    <h2 class="text-headline-sm-mobile font-headline-sm text-text-body mb-2">2. Penggunaan Informasi Proyek</h2>
+                    <p class="text-body-default text-text-muted leading-relaxed">Detail dimensi kolam, lokasi proyek, dan kebutuhan peralatan yang Anda kirimkan melalui WhatsApp digunakan secara eksklusif untuk keperluan analisis teknis hidrolika, penyusunan Rencana Anggaran Biaya (RAB), serta penjadwalan survei lapangan.</p>
+                </section>
+                            <section>
+                    <h2 class="text-headline-sm-mobile font-headline-sm text-text-body mb-2">3. Kerahasiaan Data Klien</h2>
+                    <p class="text-body-default text-text-muted leading-relaxed">Kami tidak menjual, menyewakan, atau membagikan informasi kontak maupun dokumentasi properti klien kepada pihak ketiga di luar lingkup pengerjaan proyek yang disepakati.</p>
+                </section>
+                    </div>
+
+        <div class="pt-6 border-t border-border-hairline flex flex-wrap gap-3">
+            <a class="inline-flex items-center gap-2 bg-primary-container hover:bg-action-hover text-on-primary font-action-button px-5 h-11 rounded-lg transition-colors text-sm" href="/">
+                <span class="material-symbols-outlined text-base">arrow_back</span>
+                <span>Kembali ke Beranda</span>
+            </a>
+            <a class="inline-flex items-center gap-2 bg-surface-secondary hover:bg-surface-blue text-text-body border border-border-hairline font-action-button px-5 h-11 rounded-lg transition-colors text-sm" href="https://wa.me/6282118075560" rel="noopener noreferrer" target="_blank">
+                <span class="material-symbols-outlined text-base text-primary">chat</span>
+                <span>Hubungi WhatsApp Resmi</span>
+            </a>
+        </div>
+    </div>
+</main>
+<!-- FOOTER (Biru Brand Konsisten #076aa7) -->
+<footer class="bg-primary-container text-white border-t border-primary/20 docked full-width bottom-0 mt-auto">
+    <div class="w-full max-w-[1240px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/20">
+            <!-- Brand identity kolom 4 -->
+            <div class="lg:col-span-4 space-y-4">
+                <div class="bg-white px-4 py-3 inline-flex items-center gap-3.5 rounded-xl shadow-sm">
+                    <img
+                        alt=""
+                        aria-hidden="true"
+                        class="h-9 w-auto shrink-0 object-contain"
+                        height="36"
+                        src="/images/brand/logo-dpp.png"
+                        width="52"
+                    />
+                    <div>
+                        <span class="text-base font-headline-sm text-text-body tracking-tight uppercase block leading-tight font-extrabold">Dunia Pool &amp; Pond</span>
+                        <span class="text-[11px] text-text-muted tracking-wide font-semibold block">The Pool Specialist — Est. 1997</span>
+                    </div>
+                </div>
+                <p class="text-sm text-white/90 leading-relaxed">
+                    Spesialis konstruksi kolam renang, perancangan hidrolika, pengadaan peralatan filter, dan pemeliharaan air profesional.
+                </p>
+                <div class="text-xs text-white/85 space-y-1.5 pt-1">
+                    <p class="flex items-start gap-2">
+                        <span aria-hidden="true" class="material-symbols-outlined text-[15px] text-primary-fixed mt-0.5 shrink-0">location_on</span>
+                        <a class="hover:text-white underline decoration-primary-fixed/50 hover:decoration-white transition-colors" href="https://www.google.com/maps/place/Alat+Kolam+Renang+Bandung+Barat/data=!4m2!3m1!1s0x2e68e331a6058d93:0x6f8552486c06e786?sa=X&amp;ved=1t:242&amp;hl=id&amp;ictx=111" rel="noopener noreferrer" target="_blank">Padalarang, Kabupaten Bandung Barat, Jawa Barat</a>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <span aria-hidden="true" class="material-symbols-outlined text-[15px] text-primary-fixed">schedule</span>
+                        <span>Senin – Sabtu, 08:00 – 17:00 WIB</span>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <span aria-hidden="true" class="material-symbols-outlined text-[15px] text-primary-fixed">call</span>
+                        <span>WhatsApp: +6282118075560</span>
+                    </p>
+                </div>
+            </div>
+            <!-- Kolom Navigasi Cepat -->
+            <div class="lg:col-span-2 space-y-3">
+                <p class="text-xs font-bold uppercase tracking-widest text-white">Navigasi</p>
+                <ul class="space-y-2 text-sm text-white/85">
+                    <li><a class="hover:text-white transition-colors" href="/">Beranda</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/#tentang-kami">Tentang Kami</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/layanan">Layanan Hidrolika</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/#proyek">Dokumentasi Proyek</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/#manajemen-proyek">Manajemen Proyek</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/produk">Katalog Produk</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/#kontak">Kontak Teknis</a></li>
+                </ul>
+            </div>
+            <!-- Kolom Layanan Spesifik -->
+            <div class="lg:col-span-3 space-y-3">
+                <p class="text-xs font-bold uppercase tracking-widest text-white">Layanan &amp; Produk</p>
+                <ul class="space-y-2 text-sm text-white/85">
+                    <li><a class="hover:text-white transition-colors" href="/#layanan">Desain &amp; Konsultasi</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/#layanan">Konstruksi Kolam Renang</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/#layanan">Renovasi &amp; Perbaikan</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/layanan">Sistem Sirkulasi &amp; Filtrasi</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/produk#pompa">Pompa Sirkulasi Kolam</a></li>
+                    <li><a class="hover:text-white transition-colors" href="/produk#chemical">Perawatan &amp; Bahan Kimia</a></li>
+                </ul>
+            </div>
+            <!-- Kolom Legal & Saluran Resmi -->
+            <div class="lg:col-span-3 space-y-3">
+                <p class="text-xs font-bold uppercase tracking-widest text-white">Kontak &amp; Sosial</p>
+                <p class="text-sm text-white/90 leading-relaxed">
+                    WhatsApp Resmi:<br />
+                    <a class="text-white font-bold underline decoration-primary-fixed/70 hover:decoration-white" href="https://wa.me/6282118075560" rel="noopener noreferrer" target="_blank">
+                        0821-1807-5560
+                    </a>
+                </p>
+                <p class="text-sm text-white/90">
+                    Instagram:<br />
+                    <a class="text-white font-bold underline decoration-primary-fixed/70 hover:decoration-white" href="https://www.instagram.com/duniapoolnpond/" rel="noopener noreferrer" target="_blank">
+                        @duniapoolnpond
+                    </a>
+                </p>
+                <div class="pt-2 text-xs text-white/80 leading-relaxed">
+                    Tersedia untuk konsultasi teknis spesifik &amp; pemeriksaan hidrolika di wilayah Bandung Raya, Jawa Barat &amp; proyek khusus antar kota.
+                </div>
+            </div>
+        </div>
+        <!-- Copyright Bottom Bar -->
+        <div class="pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-white/85 gap-4">
+            <p>© 1997–2026 Dunia Pool &amp; Pond. The Pool Specialist. Padalarang, Bandung Barat.</p>
+            <div class="flex space-x-6">
+                <a class="hover:text-white transition-colors" href="/kebijakan-privasi">Kebijakan Privasi</a>
+                <a class="hover:text-white transition-colors" href="/ketentuan-layanan">Ketentuan Layanan</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Back to top button -->
+<button
+    aria-label="Kembali ke atas halaman"
+    class="fixed bottom-6 right-6 z-40 w-11 h-11 rounded-full bg-primary-container hover:bg-action-hover text-white border border-white/30 shadow-lg flex items-center justify-center opacity-0 pointer-events-none translate-y-2 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2"
+    id="backToTopBtn"
+    title="Kembali ke atas"
+    type="button"
+>
+    <span aria-hidden="true" class="material-symbols-outlined text-xl">keyboard_arrow_up</span>
+</button>
+<script>
+    (function () {
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const mobileNav = document.getElementById('mobileMenu');
+        if (mobileBtn && mobileNav) {
+            mobileBtn.addEventListener('click', () => {
+                const isHidden = mobileNav.classList.toggle('hidden');
+                mobileBtn.setAttribute('aria-expanded', String(!isHidden));
+            });
+            mobileNav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileNav.classList.add('hidden');
+                    mobileBtn.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
+        const backToTopBtn = document.getElementById('backToTopBtn');
+        if (backToTopBtn) {
+            const toggleBackToTop = () => {
+                if (window.scrollY > 420) {
+                    backToTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-2');
+                    backToTopBtn.classList.add('opacity-100', 'translate-y-0');
+                } else {
+                    backToTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-2');
+                    backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
+                }
+            };
+            window.addEventListener('scroll', toggleBackToTop, { passive: true });
+            toggleBackToTop();
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+            });
+        }
+
+        const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const desktopNav = document.getElementById('desktopNav');
+        const navSlider = document.getElementById('navActiveSlider');
+        const desktopLinks = desktopNav ? Array.from(desktopNav.querySelectorAll('.nav-link')) : [];
+        const mobileLinks = Array.from(document.querySelectorAll('.mobile-nav-link'));
+        let activeNavKey = desktopNav ? (desktopNav.getAttribute('data-initial-active') || '') : '';
+
+        if (navSlider && prefersReduced) {
+            navSlider.classList.remove('transition-all', 'duration-200', 'ease-out');
+        }
+
+        function positionNavSlider(targetLink) {
+            if (!desktopNav || !navSlider) return;
+            if (!targetLink || desktopNav.offsetParent === null) {
+                navSlider.style.opacity = '0';
+                return;
+            }
+            const left = targetLink.offsetLeft;
+            const width = targetLink.offsetWidth;
+            navSlider.style.transform = `translateX(${left}px)`;
+            navSlider.style.width = `${width}px`;
+            navSlider.style.opacity = '1';
+        }
+
+        function setActiveNav(key) {
+            if (!key && activeNavKey === '') {
+                positionNavSlider(null);
+                return;
+            }
+            activeNavKey = key;
+            let activeDesktopLink = null;
+
+            desktopLinks.forEach(link => {
+                const isMatch = link.getAttribute('data-nav-key') === key;
+                link.classList.remove('border-primary', 'dark:border-inverse-primary');
+                link.classList.add('border-transparent');
+                if (isMatch) {
+                    link.classList.remove('text-text-muted', 'dark:text-outline-variant');
+                    link.classList.add('text-primary', 'dark:text-inverse-primary', 'font-semibold');
+                    link.setAttribute('aria-current', 'page');
+                    activeDesktopLink = link;
+                } else {
+                    link.classList.remove('text-primary', 'dark:text-inverse-primary', 'font-semibold');
+                    link.classList.add('text-text-muted', 'dark:text-outline-variant');
+                    link.removeAttribute('aria-current');
+                }
+            });
+
+            mobileLinks.forEach(link => {
+                const isMatch = link.getAttribute('data-nav-key') === key;
+                if (isMatch) {
+                    link.classList.remove('text-text-body', 'border-transparent');
+                    link.classList.add('text-primary', 'border-primary', 'font-semibold');
+                    link.setAttribute('aria-current', 'page');
+                } else {
+                    link.classList.remove('text-primary', 'border-primary', 'font-semibold');
+                    link.classList.add('text-text-body', 'border-transparent');
+                    link.removeAttribute('aria-current');
+                }
+            });
+
+            requestAnimationFrame(() => positionNavSlider(activeDesktopLink));
+        }
+
+        if (desktopLinks.length > 0) {
+            setActiveNav(activeNavKey);
+            window.addEventListener('resize', () => {
+                const currentLink = desktopLinks.find(l => l.getAttribute('data-nav-key') === activeNavKey) || null;
+                positionNavSlider(currentLink);
+            });
+            if (document.fonts && document.fonts.ready) {
+                document.fonts.ready.then(() => {
+                    const currentLink = desktopLinks.find(l => l.getAttribute('data-nav-key') === activeNavKey) || null;
+                    positionNavSlider(currentLink);
+                });
+            }
+        }
+
+        const sectionMappings = [
+            { id: 'beranda', key: 'beranda' },
+            { id: 'tentang-kami', key: 'tentang' },
+            { id: 'layanan', key: 'layanan' },
+            { id: 'proyek', key: 'proyek' },
+            { id: 'manajemen-proyek', key: 'manajemen' },
+            { id: 'produk', key: 'produk' },
+            { id: 'konsultasi', key: 'kontak' },
+        ].map(item => ({
+            key: item.key,
+            el: document.getElementById(item.id),
+        })).filter(item => item.el !== null);
+
+        if (sectionMappings.length > 1) {
+            const headerEl = document.querySelector('header');
+            let scrollTicking = false;
+
+            const updateScrollSpy = () => {
+                scrollTicking = false;
+                const headerHeight = headerEl ? headerEl.offsetHeight : 80;
+                const triggerOffset = headerHeight + 56;
+                const nearBottom = (window.innerHeight + window.scrollY) >= (document.documentElement.scrollHeight - 40);
+
+                let nextKey = sectionMappings[0].key;
+                if (nearBottom) {
+                    nextKey = sectionMappings[sectionMappings.length - 1].key;
+                } else {
+                    for (let i = 0; i < sectionMappings.length; i++) {
+                        const rect = sectionMappings[i].el.getBoundingClientRect();
+                        if (rect.top <= triggerOffset) {
+                            nextKey = sectionMappings[i].key;
+                        }
+                    }
+                }
+
+                if (nextKey !== activeNavKey) {
+                    setActiveNav(nextKey);
+                }
+            };
+
+            window.addEventListener('scroll', () => {
+                if (!scrollTicking) {
+                    scrollTicking = true;
+                    requestAnimationFrame(updateScrollSpy);
+                }
+            }, { passive: true });
+            window.addEventListener('hashchange', () => setTimeout(updateScrollSpy, 60));
+            window.addEventListener('load', updateScrollSpy);
+            updateScrollSpy();
+        }
+
+        const sectionParam = new URLSearchParams(window.location.search).get('section');
+        if (sectionParam) {
+            const targetSection = document.getElementById(sectionParam);
+            if (targetSection) {
+                requestAnimationFrame(() => targetSection.scrollIntoView({ behavior: prefersReduced ? 'auto' : 'smooth' }));
+            }
+        }
+
+        const revealEls = document.querySelectorAll('.reveal-item');
+        if (!prefersReduced && 'IntersectionObserver' in window && revealEls.length > 0) {
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.remove('is-hidden-reveal');
+                        entry.target.classList.add('is-visible-reveal');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+            revealEls.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top > window.innerHeight * 0.95) {
+                    el.classList.add('is-hidden-reveal');
+                    observer.observe(el);
+                } else {
+                    el.classList.add('is-visible-reveal');
+                }
+            });
+        }
+    })();
+</script>
+</body>
+</html>
+

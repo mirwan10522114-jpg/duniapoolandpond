@@ -1,9 +1,12 @@
 # Video mentah berukuran besar (>100 MB) tetap disimpan lokal
 *.mov
 
+# Salinan aset di dist/ dibuat otomatis saat build Vercel (hindari duplikasi video di Git)
+dist/images/
+dist/video/
+
 # File sistem & log lokal
 .DS_Store
 Thumbs.db
 Desktop.ini
 *.log
-
