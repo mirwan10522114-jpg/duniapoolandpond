@@ -1,0 +1,9 @@
+# Video mentah berukuran besar (>100 MB) tetap disimpan lokal
+*.mov
+
+# File sistem & log lokal
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+

@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Katalog Peralatan Kolam Renang | Dunia Pool &amp; Pond</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap"
+    rel="stylesheet">
+  <!-- Material Symbols Outlined -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <!-- Tailwind CSS CDN with forms and container-queries plugins -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Tailwind Configuration strictly adhering to Design System & Theme Tokens -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-fixed": "#b6eaff",
+            "border-hairline": "#D5E2EC",
+            "on-primary-fixed-variant": "#004a77",
+            "on-error-container": "#93000a",
+            "surface-secondary": "#F3F8FC",
+            "surface-container-highest": "#d5e3ff",
+            "on-surface-variant": "#404750",
+            "primary-container": "#076aa7",
+            "surface-container-low": "#f0f3ff",
+            "on-tertiary-fixed": "#001f28",
+            "tertiary-fixed-dim": "#5bd5fb",
+            "outline-variant": "#c0c7d1",
+            "surface-bright": "#f9f9ff",
+            "on-tertiary": "#ffffff",
+            "secondary": "#00639b",
+            "on-background": "#001c3b",
+            "error-container": "#ffdad6",
+            "on-primary-container": "#d2e6ff",
+            "on-secondary-fixed": "#001d33",
+            "error": "#ba1a1a",
+            "on-tertiary-fixed-variant": "#004e60",
+            "surface": "#f9f9ff",
+            "outline": "#717881",
+            "on-secondary-container": "#004771",
+            "surface-container-lowest": "#ffffff",
+            "on-primary": "#ffffff",
+            "tertiary": "#005569",
+            "primary-fixed-dim": "#98cbff",
+            "on-surface": "#001c3b",
+            "surface-blue": "#E9F4FB",
+            "inverse-on-surface": "#ebf1ff",
+            "secondary-fixed": "#cee5ff",
+            "on-error": "#ffffff",
+            "on-secondary-fixed-variant": "#004a76",
+            "border-control": "#6D8298",
+            "feedback-success": "#146C43",
+            "feedback-error": "#B42318",
+            "surface-dim": "#c7dbff",
+            "on-tertiary-container": "#bbecff",
+            "action-hover": "#055887",
+            "background": "#f9f9ff",
+            "bg-canvas": "#FFFFFF",
+            "on-secondary": "#ffffff",
+            "on-primary-fixed": "#001d33",
+            "primary": "#005182",
+            "inverse-primary": "#98cbff",
+            "secondary-fixed-dim": "#96cbff",
+            "surface-variant": "#d5e3ff",
+            "surface-tint": "#00639d",
+            "tertiary-container": "#006f88",
+            "text-muted": "#526274",
+            "text-body": "#142D46",
+            "surface-container": "#e7eeff",
+            "surface-container-high": "#dee8ff",
+            "secondary-container": "#63b7fe",
+            "primary-fixed": "#cfe5ff",
+            "inverse-surface": "#193151"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin": "1.25rem",
+            "gutter-desktop": "3rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "gutter-tablet": "2rem",
+            "space-xl": "2rem",
+            "space-lg": "1.5rem",
+            "margin-tablet": "2rem",
+            "gutter": "1.5rem",
+            "margin-desktop": "3rem",
+            "gutter-mobile": "1.25rem",
+            "space-md": "1rem"
+          },
+          "fontFamily": {
+            "body-lead": ["Inter", "sans-serif"],
+            "display-hero-mobile": ["Manrope", "sans-serif"],
+            "display-hero": ["Manrope", "sans-serif"],
+            "headline-lg": ["Manrope", "sans-serif"],
+            "headline-sm": ["Manrope", "sans-serif"],
+            "body-lead-mobile": ["Inter", "sans-serif"],
+            "body-default": ["Inter", "sans-serif"],
+            "headline-md": ["Manrope", "sans-serif"],
+            "label-ui": ["Inter", "sans-serif"],
+            "headline-md-mobile": ["Manrope", "sans-serif"],
+            "headline-lg-mobile": ["Manrope", "sans-serif"],
+            "headline-sm-mobile": ["Manrope", "sans-serif"],
+            "action-button": ["Inter", "sans-serif"]
+          },
+          "fontSize": {
+            "body-lead": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "display-hero": ["60px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "headline-sm": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "body-lead-mobile": ["17px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-default": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-md": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "label-ui": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+            "headline-md-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-sm-mobile": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "action-button": ["16px", { "lineHeight": "22px", "letterSpacing": "0.005em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Architectural Focus Outline */
+    :focus-visible {
+      outline: 3px solid #076AA7;
+      outline-offset: 2px;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+  </style>
+</head>
+
+<body
+  class="bg-[#f1f6fb] text-text-body font-body-default antialiased selection:bg-surface-container selection:text-primary min-h-screen flex flex-col">
+  <!-- TopNavBar (Shared Component JSON Blueprint Executed) -->
+  <header
+    class="bg-bg-canvas dark:bg-inverse-surface border-b border-border-hairline dark:border-outline-variant shadow-[0_4px_20px_rgba(11,37,69,0.05)] dark:shadow-none docked full-width top-0 sticky z-50">
+    <div
+      class="flex justify-between items-center w-full max-w-[1240px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop h-20">
+      <!-- Brand & Origin -->
+      <a class="group flex flex-col justify-center focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2"
+        href="#beranda">
+        <span
+          class="text-headline-sm font-headline-sm text-text-body dark:text-inverse-on-surface tracking-tight uppercase group-hover:text-primary transition-colors duration-150">
+          DUNIA POOL &amp; POND
+        </span>
+        <span class="text-label-ui font-label-ui text-text-muted text-xs tracking-wider">
+          The Pool Specialist - Sejak 1997
+        </span>
+      </a>
+      <!-- Desktop Navigation Links (Produk Active via JSON instructions) -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a class="text-text-muted dark:text-outline-variant font-action-button hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2"
+          href="#beranda">
+          Beranda
+        </a>
+        <a class="text-text-muted dark:text-outline-variant font-action-button hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2"
+          href="#tentang-kami">
+          Tentang Kami
+        </a>
+        <a class="text-text-muted dark:text-outline-variant font-action-button hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2"
+          href="#layanan">
+          Layanan
+        </a>
+        <a class="text-text-muted dark:text-outline-variant font-action-button hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2"
+          href="#proyek">
+          Proyek
+        </a>
+        <!-- Active Link: Produk -->
+        <a aria-current="page"
+          class="text-primary dark:text-inverse-primary font-action-button border-b-2 border-primary dark:border-inverse-primary pb-1 focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2"
+          href="#produk">
+          Produk
+        </a>
+        <a class="text-text-muted dark:text-outline-variant font-action-button hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2"
+          href="#kontak">
+          Kontak
+        </a>
+      </nav>
+      <!-- Action Button CTA -->
+      <div class="flex items-center gap-4">
+        <a class="bg-primary-container text-on-primary font-action-button text-action-button px-5 py-2.5 rounded-lg hover:bg-action-hover transition-colors duration-160 focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2 flex items-center gap-2"
+          href="#kontak">
+          <span class="material-symbols-outlined text-lg" data-icon="support_agent">support_agent</span>
+          <span>Konsultasi Proyek</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- Main Content Canvas -->
+  <main class="flex-grow w-full max-w-[1240px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl">
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="Breadcrumb" class="flex items-center text-label-ui font-label-ui text-text-muted mb-space-md">
+      <a class="hover:text-primary transition-colors duration-150" href="#beranda">Beranda</a>
+      <span class="mx-2 text-border-control">/</span>
+      <span aria-current="page" class="text-text-body font-medium">Produk</span>
+    </nav>
+    <!-- Page Title & Architectural Header -->
+    <div
+      class="mb-space-lg bg-surface-lowest/70 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-[#d5e2ec] shadow-sm relative overflow-hidden">
+      <div class="absolute -right-8 -top-8 w-64 h-64 opacity-25 pointer-events-none text-primary/30"><svg width="100%"
+          height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="architectural-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+              <circle cx="2" cy="2" r="1.5" fill="currentColor"></circle>
+              <path d="M 20 0 L 0 0 0 20" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2 2"
+                opacity="0.4"></path>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#architectural-grid)"></rect>
+        </svg></div>
+      <div
+        class="inline-flex items-center gap-2 px-3 py-1 bg-surface-secondary border border-border-hairline rounded-lg text-xs font-label-ui text-primary mb-3">
+        <span class="material-symbols-outlined text-base" data-icon="verified">verified</span>
+        <span>Spesifikasi Hidrolika Resmi &amp; Garansi Pabrik</span>
+      </div>
+      <h1 class="text-headline-md-mobile md:text-headline-md font-headline-md text-text-body tracking-tight">
+        Peralatan Kolam Renang
+      </h1>
+      <p class="text-body-lead-mobile md:text-body-lead font-body-lead text-text-muted mt-2 max-w-3xl">
+        Jelajahi pilihan peralatan dan konsultasikan kebutuhan sistem kolam Anda.
+      </p>
+    </div>
+    <!-- Quiet Technical Disclaimer Banner -->
+    <div
+      class="bg-gradient-to-r from-surface-secondary to-[#eaf2f8] border border-border-hairline rounded-xl p-space-md md:p-space-lg mb-space-xl flex items-start gap-4 shadow-sm">
+      <div
+        class="w-10 h-10 rounded-lg bg-surface-blue flex items-center justify-center text-primary flex-shrink-0 border border-border-hairline mt-0.5">
+        <span class="material-symbols-outlined" data-icon="info">info</span>
+      </div>
+      <div class="text-body-default font-body-default text-text-body">
+        <p class="text-sm leading-relaxed text-text-muted">
+          <strong class="text-text-body font-semibold">Catatan Teknis Arsitektural:</strong> Peralatan dan spesifikasi
+          dapat disesuaikan dengan dimensi kolam serta sistem hidrolika (skimmer/overflow). Hubungi teknisi kami via
+          WhatsApp untuk verifikasi ketersediaan dan tipe yang tepat. Seluruh unit diuji kompatibilitas sirkulasi dan
+          tekanan kerja.
+        </p>
+      </div>
+    </div>
+    <!-- Catalog Toolbar (Section 12.2) -->
+    <section aria-label="Toolbar Penyaringan Produk"
+      class="mb-space-xl bg-surface-container-lowest border border-[#d5e2ec] shadow-sm rounded-xl p-space-md md:p-space-lg relative overflow-hidden">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb- space-md">
+        <!-- Search Input -->
+        <div class="relative flex-1 max-w-lg">
+          <label class="sr-only" for="catalog-search">Cari produk peralatan kolam</label>
+          <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-text-muted">
+            <span class="material-symbols-outlined text-xl" data-icon="search">search</span>
+          </div>
+          <input
+            class="w-full h-12 pl-11 pr-4 bg-bg-canvas border border-border-control rounded-lg text-body-default text-text-body placeholder:text-text-muted focus:border-primary focus:ring-2 focus:ring-primary focus:outline-none transition-colors duration-160"
+            id="catalog-search" placeholder="Cari produk..." type="text">
+        </div>
+        <!-- Filter Controls -->
+        <div class="flex flex-wrap items-center gap-3">
+          <!-- Dropdown Filter Kategori -->
+          <div class="relative min-w-[240px]">
+            <label class="sr-only" for="category-select">Kategori</label>
+            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-text-muted">
+              <span class="material-symbols-outlined text-xl" data-icon="filter_list">filter_list</span>
+            </div>
+            <select
+              class="w-full h-12 pl-10 pr-9 bg-bg-canvas border border-border-control rounded-lg text-body-default text-text-body focus:border-primary focus:ring-2 focus:ring-primary focus:outline-none transition-colors duration-160 cursor-pointer appearance-none"
+              id="category-select">
+              <option value="all">Semua Kategori</option>
+              <option value="pompa">Pompa Kolam Renang</option>
+              <option value="filter">Filter &amp; Media Filtrasi</option>
+              <option value="lampu">Lampu Kolam Renang</option>
+              <option value="skimmer">Skimmer Box</option>
+              <option value="fitting">Inlet &amp; Fitting Kolam</option>
+              <option value="cleaner">Peralatan Pembersih Kolam</option>
+              <option value="chemical">Bahan Kimia &amp; Penjernih Air</option>
+              <option value="mosaic">Mosaic &amp; Finishing Kolam</option>
+              <option value="lane">Pembatas Lintasan Kolam</option>
+            </select>
+            <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none text-text-muted">
+              <span class="material-symbols-outlined text-xl" data-icon="arrow_drop_down">arrow_drop_down</span>
+            </div>
+          </div>
+          <!-- Reset Filter Button -->
+          <button
+            class="h-12 px-4 border border-border-hairline rounded-lg text-text-body font-action-button hover:bg-surface-secondary text-sm flex items-center gap-2 transition-colors duration-160 focus:outline-none focus:ring-2 focus:ring-primary-container"
+            id="reset-filter-btn" type="button">
+            <span class="material-symbols-outlined text-lg" data-icon="restart_alt">restart_alt</span>
+            <span>Reset Filter</span>
+          </button>
+        </div>
+      </div>
+      <!-- Quick Filter Pills -->
+      <div class="pt-4 border-t border-border-hairline flex flex-wrap items-center gap-2">
+        <span class="text-xs font-label-ui text-text-muted mr-1">Filter Cepat:</span>
+        <button
+          class="category-pill active h-8 px-3.5 bg-primary text-on-primary rounded-lg text-xs font-label-ui border border-primary transition-colors duration-150"
+          data-filter="all" type="button">Semua (9)</button>
+        <button
+          class="category-pill h-8 px-3.5 bg-surface-secondary text-text-body rounded-lg text-xs font-label-ui border border-border-hairline hover:bg-surface-container transition-colors duration-150"
+          data-filter="pompa" type="button">Pompa</button>
+        <button
+          class="category-pill h-8 px-3.5 bg-surface-secondary text-text-body rounded-lg text-xs font-label-ui border border-border-hairline hover:bg-surface-container transition-colors duration-150"
+          data-filter="filter" type="button">Filter</button>
+        <button
+          class="category-pill h-8 px-3.5 bg-surface-secondary text-text-body rounded-lg text-xs font-label-ui border border-border-hairline hover:bg-surface-container transition-colors duration-150"
+          data-filter="lampu" type="button">Lampu</button>
+        <button
+          class="category-pill h-8 px-3.5 bg-surface-secondary text-text-body rounded-lg text-xs font-label-ui border border-border-hairline hover:bg-surface-container transition-colors duration-150"
+          data-filter="skimmer-fitting" type="button">Skimmer &amp; Fitting</button>
+        <button
+          class="category-pill h-8 px-3.5 bg-surface-secondary text-text-body rounded-lg text-xs font-label-ui border border-border-hairline hover:bg-surface-container transition-colors duration-150"
+          data-filter="cleaner" type="button">Alat Pembersih</button>
+        <button
+          class="category-pill h-8 px-3.5 bg-surface-secondary text-text-body rounded-lg text-xs font-label-ui border border-border-hairline hover:bg-surface-container transition-colors duration-150"
+          data-filter="chemical" type="button">Chemical</button>
+      </div>
+      <!-- Result Counter Banner -->
+      <div
+        class="mt-4 pt-3 border-t border-border-hairline flex items-center justify-between text-xs text-text-muted font-label-ui">
+        <span class="flex items-center gap-1.5 text-text-body font-medium" id="result-counter">
+          <span class="w-2 h-2 rounded-full bg-feedback-success inline-block"></span>
+          Menampilkan 9 kategori peralatan kolam renang
+        </span>
+        <span class="text-text-muted">Katalog Terverifikasi Tim Ahli Sipil</span>
+      </div>
+    </section>
+    <!-- Grid Produk (Bab 12.2 & 12.3: 3 Kolom Desktop, Minimalis Arsitektural) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-space-xl" id="product-grid">
+      <!-- Kartu 1: Pompa Kolam Renang -->
+      <article
+        class="product-card bg-bg-canvas border border-border-hairline rounded-xl flex flex-col justify-between overflow-hidden transition-colors duration-150 hover:border-border-control"
+        data-category="pompa">
+        <div>
+          <div class="relative w-full aspect-[3/2] bg-surface-blue border-b border-border-hairline overflow-hidden">
+            <img class="w-full h-full object-cover"
+              data-alt="An industrial heavy-duty pool circulation pump with a reinforced thermoplastic housing, transparent strainer basket, and precision gauge, staged cleanly on a light gray architectural concrete surface under soft diffused studio lighting with a calm minimal blue undertone."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA86czNUsCK0DMZbP2jFdh2Wh0FkqFIvP-DIW6t2AmPl_0cp1XTkOrxI--ghMxk_keizZukqSZiOqnR0waQPq0WZ14T5xdonK0VCTuNQh5HHbTQPVNIzeDf-mVU-7AcUR7lvv3C0unHAtYIK3zQI6KoBVuKAmeuZNf0WBSbo9UERepVXgqbSaIMMnzg3-rarjU9vMZsJp_S6Nhnfw1-LgbaB7JbERNg7R-hu8vwfyw">
+            <div class="absolute top-3 left-3">
+              <span
+                class="inline-block bg-surface-secondary border border-border-hairline px-3 py-1 rounded-lg text-xs font-label-ui text-text-body">
+                Pompa Kolam Renang
+              </span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h2 class="text-headline-sm font-headline-sm text-text-body text-xl tracking-tight mb-1">
+              Pompa Sirkulasi Kolam Renang
+            </h2>
+            <div class="flex items-center gap-1 text-xs text-primary font-medium mb-3">
+              <span class="material-symbols-outlined text-sm" data-icon="inventory_2">inventory_2</span>
+              <span>Pilihan: AstralPool, Hayward, DAB</span>
+            </div>
+            <p class="text-body-default font-body-default text-text-muted text-sm leading-relaxed">
+              Pompa sirkulasi debit stabil untuk resirkulasi filtrasi kolam renang residensial hingga semi-olimpik.
+              Efisiensi energi tinggi dan motor tahan korosi.
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0 flex flex-col gap-2.5">
+          <a class="w-full h-12 bg-primary-container hover:bg-action-hover text-on-primary font-action-button text-sm rounded-lg flex items-center justify-center gap-2 transition-colors duration-160 focus:outline-none focus:ring-2 focus:ring-primary-container"
+            href="https://wa.me/6282118075560?text=Halo%20Dunia%20Pool%20%26%20Pond%2C%20saya%20ingin%20tanya%20mengenai%20spesifikasi%20Pompa%20Sirkulasi%20Kolam%20Renang."
+            rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+            <span>Tanyakan Produk Ini</span>
+          </a>
+          <button
+            class="w-full h-11 bg-transparent border border-border-hairline hover:bg-surface-secondary text-text-body font-action-button text-xs rounded-lg flex items-center justify-center gap-1.5 transition-colors duration-160"
+            onclick="openSpecModal('Pompa Sirkulasi Kolam Renang', 'Tersedia kapasitas 0.5 HP hingga 3.0 HP. Dilengkapi strainer pre-filter anti-clog, mechanical seal carbon/ceramic, dan proteksi termal IP55. Kompatibel dengan pipa diameter 1.5 hingga 2 inci.')"
+            type="button">
+            <span class="material-symbols-outlined text-base" data-icon="straighten">straighten</span>
+            <span>Lihat Spesifikasi</span>
+          </button>
+        </div>
+      </article>
+      <!-- Kartu 2: Filter & Media Filtrasi -->
+      <article
+        class="product-card bg-bg-canvas border border-border-hairline rounded-xl flex flex-col justify-between overflow-hidden transition-colors duration-150 hover:border-border-control"
+        data-category="filter">
+        <div>
+          <div class="relative w-full aspect-[3/2] bg-surface-blue border-b border-border-hairline overflow-hidden">
+            <img class="w-full h-full object-cover"
+              data-alt="A commercial sand filter tank made of fiberglass wound composite with a heavy-duty multi-port top valve, placed in a clean architectural equipment room. Studio lit with neutral white lights, showcasing durable construction and professional technical finish."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuClCRZs_wue23jO5t-eXuBB42uUe_AO3dP01kNrBbd6t0zc7w4k2kLnOOMuEvpzT5VHXgcgVfAe7Oz_i3vSk_20Ax6LOeQxWkw8oZ8rtp9RwbzTdoSMUpMqwZnIK5ke8l8xcGAdz81UNCb9vE8nmaatlOnoNUspL9x1K_k9opBTzcobDqJlWclRCBzSfE8olYMFlov2yuHgASbe79nHqHc0jdvF4zn7QRhWdWrcacQ">
+            <div class="absolute top-3 left-3">
+              <span
+                class="inline-block bg-surface-secondary border border-border-hairline px-3 py-1 rounded-lg text-xs font-label-ui text-text-body">
+                Filter &amp; Media Filtrasi
+              </span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h2 class="text-headline-sm font-headline-sm text-text-body text-xl tracking-tight mb-1">
+              Sand Filter &amp; Media Pasir Silika
+            </h2>
+            <div class="flex items-center gap-1 text-xs text-primary font-medium mb-3">
+              <span class="material-symbols-outlined text-sm" data-icon="inventory_2">inventory_2</span>
+              <span>Pilihan: AstralPool, Emaux, Hayward</span>
+            </div>
+            <p class="text-body-default font-body-default text-text-muted text-sm leading-relaxed">
+              Tabung sand filter komposit tahan tekanan dan cuaca luar ruang, dipadukan media silica sand murni atau
+              glass media aktif untuk kejernihan optimal.
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a class="w-full h-12 bg-primary-container hover:bg-action-hover text-on-primary font-action-button text-sm rounded-lg flex items-center justify-center gap-2 transition-colors duration-160 focus:outline-none focus:ring-2 focus:ring-primary-container"
+            href="https://wa.me/6282118075560?text=Halo%20Dunia%20Pool%20%26%20Pond%2C%20saya%20ingin%20konsultasi%20mengenai%20Sand%20Filter%20dan%20Media%20Pasir%20Silika."
+            rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+            <span>Tanyakan Produk Ini</span>
+          </a>
+        </div>
+      </article>
+      <!-- Kartu 3: Lampu Kolam Renang -->
+      <article
+        class="product-card bg-bg-canvas border border-border-hairline rounded-xl flex flex-col justify-between overflow-hidden transition-colors duration-150 hover:border-border-control"
+        data-category="lampu">
+        <div>
+          <div class="relative w-full aspect-[3/2] bg-surface-blue border-b border-border-hairline overflow-hidden">
+            <img class="w-full h-full object-cover"
+              data-alt="An underwater flat resin-filled LED pool luminaire with stainless steel faceplate, submerged in clear pristine pool water emitting a soft ambient warm-white glow. Sharp focus, clean architectural detail, photographed under balanced dusk architectural lighting."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwoqxxb4o8hkL0h9KWE3Pe819H_jewKI8bwNExJqzRWq10FJDEbU5ZPMtqo2lH-W7BtQ59aJcO0zalPDc7JHYs-K5GZvYTGd69MagLZBHyZVcs2eVVD_pf2mqkKVqgzP5tPy9ubw9ecSqEn8aJDu16-Nx_AuW2TnnpeWAU1rZNpQTJhutNWXuYW1L837kVO9ZJ6R34xeXh-Vr7JvsPI06vet2XLrhziMhbtjSXcLE">
+            <div class="absolute top-3 left-3">
+              <span
+                class="inline-block bg-surface-secondary border border-border-hairline px-3 py-1 rounded-lg text-xs font-label-ui text-text-body">
+                Lampu Kolam Renang
+              </span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h2 class="text-headline-sm font-headline-sm text-text-body text-xl tracking-tight mb-1">
+              LED Underwater Light Waterproof IP68
+            </h2>
+            <div class="flex items-center gap-1 text-xs text-text-muted font-medium mb-3">
+              <span class="material-symbols-outlined text-sm" data-icon="shield">shield</span>
+              <span>Proteksi Ekstra IP68 &amp; Resin Penuh</span>
+            </div>
+            <p class="text-body-default font-body-default text-text-muted text-sm leading-relaxed">
+              Lampu LED bawah air hemat energi dengan rating proteksi IP68 waterproof penuh. Tersedia opsi Warm White
+              3000K, Daylight, dan RGB color switch.
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a class="w-full h-12 bg-primary-container hover:bg-action-hover text-on-primary font-action-button text-sm rounded-lg flex items-center justify-center gap-2 transition-colors duration-160 focus:outline-none focus:ring-2 focus:ring-primary-container"
+            href="https://wa.me/6282118075560?text=Halo%20Dunia%20Pool%20%26%20Pond%2C%20saya%20tertarik%20dengan%20LED%20Underwater%20Light%20Waterproof%20IP68."
+            rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+            <span>Tanyakan Produk Ini</span>
+          </a>
+        </div>
+      </article>
+      <!-- Kartu 4: Skimmer Box -->
+      <article
+        class="product-card bg-bg-canvas border border-border-hairline rounded-xl flex flex-col justify-between overflow-hidden transition-colors duration-150 hover:border-border-control"
+        data-category="skimmer">
+        <div>
+          <div class="relative w-full aspect-[3/2] bg-surface-blue border-b border-border-hairline overflow-hidden">
+            <img class="w-full h-full object-cover"
+              data-alt="An ABS injection molded commercial pool skimmer box with a square deck collar and internal leaf strainer basket. High-angle architectural photography against crisp architectural tiles, highlighted with bright neutral laboratory daylight."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVZYBgKxNilzKk9IApRft94DZe7Q6A2l7DLvupjSH2sATCvNGjLN1jjNRajxgJDy6dse8oW2vzWh74iT5x_cEgvnHwqtpScM2zpAPFWL-_oHkxnMfwkdWuqPZdoRm2iCMPgEflqmh5sS5iT96IX31JUhiI2DjN0yTi7EilCZ8_ckN6SOf4Z6J-cdSqg0iO5ux8Xpykzu_WAqlGSwEYejULMLSzTiQuKw5PNtCsAJc">
+            <div class="absolute top-3 left-3">
+              <span
+                class="inline-block bg-surface-secondary border border-border-hairline px-3 py-1 rounded-lg text-xs font-label-ui text-text-body">
+                Skimmer Box
+              </span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h2 class="text-headline-sm font-headline-sm text-text-body text-xl tracking-tight mb-1">
+              Heavy-Duty Skimmer Box Kolam
+            </h2>
+            <div class="flex items-center gap-1 text-xs text-text-muted font-medium mb-3">
+              <span class="material-symbols-outlined text-sm" data-icon="water">water</span>
+              <span>Sistem Skimmer Standar Internasional</span>
+            </div>
+            <p class="text-body-default font-body-default text-text-muted text-sm leading-relaxed">
+              Kotak skimmer material ABS tebal standar internasional untuk kolam sistem skimmer. Dilengkapi keranjang
+              strainer daun dan tutup rata lantai.
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a class="w-full h-12 bg-primary-container hover:bg-action-hover text-on-primary font-action-button text-sm rounded-lg flex items-center justify-center gap-2 transition-colors duration-160 focus:outline-none focus:ring-2 focus:ring-primary-container"
+            href="https://wa.me/6282118075560?text=Halo%20Dunia%20Pool%20%26%20Pond%2C%20saya%20butuh%20informasi%20Heavy-Duty%20Skimmer%20Box%20Kolam."
+            rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+            <span>Tanyakan Produk Ini</span>
+          </a>
+        </div>
+      </article>
+      <!-- Kartu 5: Inlet & Fitting Kolam -->
+      <article
+        class="product-card bg-bg-canvas border border-border-hairline rounded-xl flex flex-col justify-between overflow-hidden transition-colors duration-150 hover:border-border-control"
+        data-category="fitting">
+        <div>
+          <div class="relative w-full aspect-[3/2] bg-surface-blue border-b border-border-hairline overflow-hidden">
+            <img class="w-full h-full object-cover"
+              data-alt="A collection of white architectural pool fittings including directional eyeball return nozzles, vacuum point lock fittings, and an anti-vortex main drain grate arranged symmetrically on architectural drafting plans, bathed in soft studio daylight."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVuyknign91nEO8MnrMfYcPDY6VdnwHfD_oz5n-T1WbdhFtHhghKv3-NmNP7Z0bFlwFTO9tsDbWsOn1IUad9DDSc-YMv7Ourv_JR84Ur5kRGebmzgktkreWZDriW4oJfRL6smAqZEa2hJSrk_pneuDADsAYlf7b0JJJf0DPoogeh-zHl1V_jKolwO7lSKU6w6vCzOPhpfllSg7uYTAtzACwLwAInsKL0W9X8x6Wac">
+            <div class="absolute top-3 left-3">
+              <span
+                class="inline-block bg-surface-secondary border border-border-hairline px-3 py-1 rounded-lg text-xs font-label-ui text-text-body">
+                Inlet &amp; Fitting Kolam
+              </span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h2 class="text-headline-sm font-headline-sm text-text-body text-xl tracking-tight mb-1">
+              Return Inlet Nozzle &amp; Main Drain Cover
+            </h2>
+            <div class="flex items-center gap-1 text-xs text-text-muted font-medium mb-3">
+              <span class="material-symbols-outlined text-sm" data-icon="tune">tune</span>
+              <span>Material ABS UV-Resistant Stabilized</span>
+            </div>
+            <p class="text-body-default font-body-default text-text-muted text-sm leading-relaxed">
+              Fitting sirkulasi dinding dan lantai kolam berbahan ABS UV-resistant, memastikan aliran semburan air
+              merata ke seluruh sudut kolam.
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a class="w-full h-12 bg-primary-container hover:bg-action-hover text-on-primary font-action-button text-sm rounded-lg flex items-center justify-center gap-2 transition-colors duration-160 focus:outline-none focus:ring-2 focus:ring-primary-container"
+            href="https://wa.me/6282118075560?text=Halo%20Dunia%20Pool%20%26%20Pond%2C%20saya%20ingin%20tanya%20mengenai%20Inlet%20Nozzle%20dan%20Main%20Drain%20Cover."
+            rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+            <span>Tanyakan Produk Ini</span>
+          </a>
+        </div>
+      </article>
+      <!-- Kartu 6: Peralatan Pembersih Kolam -->
+      <article
+        class="product-card bg-bg-canvas border border-border-hairline rounded-xl flex flex-col justify-between overflow-hidden transition-colors duration-150 hover:border-border-control"
+        data-category="cleaner">
+        <div>
+          <div class="relative w-full aspect-[3/2] bg-surface-blue border-b border-border-hairline overflow-hidden">
+            <img class="w-full h-full object-cover"
+              data-alt="A professional pool cleaning equipment maintenance set: heavy 8-wheel vacuum head, blue ribbed flexible vacuum hose, telescopic pole, and stainless steel deep leaf rake, organized with technical neatness beside a crystal-clear swimming pool edge."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7LIztEgt2Htq8gcxItn7mxPZX27LbqMTcstFCzYS5XeOSH_M6gzGGAR9G3hYTrwcCOQtOY5BTEEhjH2a9fce1SZfxAyEc9G5K7J3ZCRY5r7zL9Rf2M3W684lY2TD0d8vNoRQVakTOklVBixa3kfdoNprNRL1EDC9YS6SoqPZOMgSv9YogqhUj8kqcNYl1v9rY1JHgDg30AdkZs6u1vcdLePG7uW0tHRpgvZ1hTzs">
+            <div class="absolute top-3 left-3">
+              <span
+                class="inline-block bg-surface-secondary border border-border-hairline px-3 py-1 rounded-lg text-xs font-label-ui text-text-body">
+                Peralatan Pembersih Kolam
+              </span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h2 class="text-headline-sm font-headline-sm text-text-body text-xl tracking-tight mb-1">
+              Set Pembersih Manual (Vacuum Head, Selang, Pole)
+            </h2>
+            <div class="flex items-center gap-1 text-xs text-text-muted font-medium mb-3">
+              <span class="material-symbols-outlined text-sm" data-icon="cleaning_services">cleaning_services</span>
+              <span>Kelengkapan Perawatan Terstandar</span>
+            </div>
+            <p class="text-body-default font-body-default text-text-muted text-sm leading-relaxed">
+              Perlengkapan vacuuming dasar: vacuum head 8 roda dengan sikat samping, selang spiral fleksibel tahan
+              kempes, telescopic pole aluminium, dan leaf skimmer net.
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a class="w-full h-12 bg-primary-container hover:bg-action-hover text-on-primary font-action-button text-sm rounded-lg flex items-center justify-center gap-2 transition-colors duration-160 focus:outline-none focus:ring-2 focus:ring-primary-container"
+            href="https://wa.me/6282118075560?text=Halo%20Dunia%20Pool%20%26%20Pond%2C%20saya%20ingin%20pesan%20Set%20Pembersih%20Manual%20Kolam%20Renang."
+            rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+            <span>Tanyakan Produk Ini</span>
+          </a>
+        </div>
+      </article>
+      <!-- Kartu 7: Bahan Kimia & Penjernih Air -->
+      <article
+        class="product-card bg-bg-canvas border border-border-hairline rounded-xl flex flex-col justify-between overflow-hidden transition-colors duration-150 hover:border-border-control"
+        data-category="chemical">
+        <div>
+          <div class="relative w-full aspect-[3/2] bg-surface-blue border-b border-border-hairline overflow-hidden">
+            <img class="w-full h-full object-cover"
+              data-alt="Technical sealed containers of commercial grade swimming pool water treatment chemicals: TCCA chlorine granules and tablets, pH regulators, and clear water clarifier liquid bottles, presented in a clean, laboratory-like architectural display."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB248XGMAHs6vNcOHsf0hthRiBTy0iHH_xAdzAsSfRMEnIRxkllCLGzE1tmKQx3SxzjdwAvD3HwCmCqNtp3ht6UT8lCp6j_GFKOCyr8jbUosQg8MW8q_JfwKnGYSC0bFwJz8QfqMXYJmnkjlk7c67rx5xSGJgaUvj9kLta3CXvB5AgG9FUkP1MicsnjEdB99tXk9PxvolTfap3iLA53kMbP3TOkm0W23qvqxQezch4">
+            <div class="absolute top-3 left-3">
+              <span
+                class="inline-block bg-surface-secondary border border-border-hairline px-3 py-1 rounded-lg text-xs font-label-ui text-text-body">
+                Bahan Kimia &amp; Penjernih Air
+              </span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h2 class="text-headline-sm font-headline-sm text-text-body text-xl tracking-tight mb-1">
+              Klorin TCCA 90% &amp; Penjernih Viper Pool
+            </h2>
+            <div class="flex items-center gap-1 text-xs text-text-muted font-medium mb-3">
+              <span class="material-symbols-outlined text-sm" data-icon="science">science</span>
+              <span>Sanitasi Murni &amp; Water Balance Presisi</span>
+            </div>
+            <p class="text-body-default font-body-default text-text-muted text-sm leading-relaxed">
+              Klorin granular dan tablet 90% untuk sanitasi bakteri, soda ash pengatur pH, algaecide tembaga sulfat, dan
+              koagulan PAC penjernih air.
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a class="w-full h-12 bg-primary-container hover:bg-action-hover text-on-primary font-action-button text-sm rounded-lg flex items-center justify-center gap-2 transition-colors duration-160 focus:outline-none focus:ring-2 focus:ring-primary-container"
+            href="https://wa.me/6282118075560?text=Halo%20Dunia%20Pool%20%26%20Pond%2C%20saya%20ingin%20konsultasi%20pembelian%20Bahan%20Kimia%20dan%20Penjernih%20Air%20Kolam."
+            rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+            <span>Tanyakan Produk Ini</span>
+          </a>
+        </div>
+      </article>
+      <!-- Kartu 8: Mosaic & Finishing Kolam -->
+      <article
+        class="product-card bg-bg-canvas border border-border-hairline rounded-xl flex flex-col justify-between overflow-hidden transition-colors duration-150 hover:border-border-control"
+        data-category="mosaic">
+        <div>
+          <div class="relative w-full aspect-[3/2] bg-surface-blue border-b border-border-hairline overflow-hidden">
+            <img class="w-full h-full object-cover"
+              data-alt="Architectural material sample grid of vitreous porcelain mosaic tiles in gradients of cobalt blue, cyan, and deep aquatic navy with neat white grout lines, captured in sharp geometric macro under clean natural studio sunlight."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfkj82oenPjNlyRc77ogFEbwX05lZmKMPb_klDmwFRSUlCUsS4VaCrZWr0pQIyB_NHpqaR54CjYsTWHzlWpVvM2pAYh2ljhxNsPIsqDS30hFlazqVHe_UhtBxmPUmxmy6uHCZ-TwwwnDZcSdpphhyJiZpX63sa5O-A6YovQgV0rqbYSdc1-WIi7E-NbgXN8LdW-Ev0AB1zD5_Qh0TUb4eJtdq91eckXZBk7Pp5Jwc">
+            <div class="absolute top-3 left-3">
+              <span
+                class="inline-block bg-surface-secondary border border-border-hairline px-3 py-1 rounded-lg text-xs font-label-ui text-text-body">
+                Mosaic &amp; Finishing Kolam
+              </span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h2 class="text-headline-sm font-headline-sm text-text-body text-xl tracking-tight mb-1">
+              Mosaic Keramik &amp; Ubin Porselen Kolam
+            </h2>
+            <div class="flex items-center gap-1 text-xs text-primary font-medium mb-3">
+              <span class="material-symbols-outlined text-sm" data-icon="inventory_2">inventory_2</span>
+              <span>Pilihan: Kuda Laut Mas, Atena Tiles, Roman</span>
+            </div>
+            <p class="text-body-default font-body-default text-text-muted text-sm leading-relaxed">
+              Pilihan mosaic porselen berdaya serap air sangat rendah (&lt;0.5%) dengan lapisan glasir anti-lumut dan
+              aman terhadap chemical klorin.
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a class="w-full h-12 bg-primary-container hover:bg-action-hover text-on-primary font-action-button text-sm rounded-lg flex items-center justify-center gap-2 transition-colors duration-160 focus:outline-none focus:ring-2 focus:ring-primary-container"
+            href="https://wa.me/6282118075560?text=Halo%20Dunia%20Pool%20%26%20Pond%2C%20saya%20ingin%20katalog%20dan%20sampel%20Mosaic%20Keramik%20Kolam%20Renang."
+            rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+            <span>Tanyakan Produk Ini</span>
+          </a>
+        </div>
+      </article>
+      <!-- Kartu 9: Pembatas Lintasan Kolam -->
+      <article
+        class="product-card bg-bg-canvas border border-border-hairline rounded-xl flex flex-col justify-between overflow-hidden transition-colors duration-150 hover:border-border-control"
+        data-category="lane">
+        <div>
+          <div class="relative w-full aspect-[3/2] bg-surface-blue border-b border-border-hairline overflow-hidden">
+            <img class="w-full h-full object-cover"
+              data-alt="Competition wave-reducing racing lane ropes in alternating red and white turbine floats stretched taut along a 25-meter Olympic training pool, with crystal clean rippling water reflections in an architectural aquatic sports pavilion."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpfOvGgoEl_0MNOB7dFhWc07JCdIBW_Z6wyiEDySW0pKio1T6f1Ne0ceHqZMZhEIwtZyQXfSy1LYRAZXae9thYPUnabq6WAvW66EmONhglIVi6opyBHzhfXyP_JjPsWllLTqEx5WYwGw4qbl3rZiNJhumjo5_JViSu6mnWrkXP3fb9jPBSYmy2CqZFOHOqxzczF2Q8o_v2GbfhCB8fzL2mdZQFV1H211iQxYRSREw">
+            <div class="absolute top-3 left-3">
+              <span
+                class="inline-block bg-surface-secondary border border-border-hairline px-3 py-1 rounded-lg text-xs font-label-ui text-text-body">
+                Pembatas Lintasan Kolam
+              </span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h2 class="text-headline-sm font-headline-sm text-text-body text-xl tracking-tight mb-1">
+              Racing Lane Rope &amp; Pelampung Pembatas
+            </h2>
+            <div class="flex items-center gap-1 text-xs text-text-muted font-medium mb-3">
+              <span class="material-symbols-outlined text-sm" data-icon="pool">pool</span>
+              <span>Desain Anti-Ombak (Wave-Reducing)</span>
+            </div>
+            <p class="text-body-default font-body-default text-text-muted text-sm leading-relaxed">
+              Tali lintasan renang anti-ombak (wave-reducing lane line) untuk kolam latihan, club renang, fasilitas
+              kebugaran, dan sekolah.
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a class="w-full h-12 bg-primary-container hover:bg-action-hover text-on-primary font-action-button text-sm rounded-lg flex items-center justify-center gap-2 transition-colors duration-160 focus:outline-none focus:ring-2 focus:ring-primary-container"
+            href="https://wa.me/6282118075560?text=Halo%20Dunia%20Pool%20%26%20Pond%2C%20saya%20ingin%20informasi%20Racing%20Lane%20Rope%20dan%20Pembatas%20Lintasan."
+            rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+            <span>Tanyakan Produk Ini</span>
+          </a>
+        </div>
+      </article>
+    </div>
+    <!-- Empty State Container (Hidden by default) -->
+    <div class="hidden py-16 px-6 text-center bg-bg-canvas border border-border-hairline rounded-xl mb-space-xl"
+      id="empty-state">
+      <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-surface-blue flex items-center justify-center text-primary">
+        <span class="material-symbols-outlined text-3xl" data-icon="search_off">search_off</span>
+      </div>
+      <h3 class="text-headline-sm font-headline-sm text-text-body mb-2">Produk Tidak Ditemukan</h3>
+      <p class="text-body-default font-body-default text-text-muted max-w-md mx-auto mb-6">
+        Tidak ada peralatan yang sesuai dengan filter atau kata kunci Anda. Anda dapat mereset pencarian atau menanyakan
+        langsung pada teknisi kami.
+      </p>
+      <button
+        class="inline-flex items-center gap-2 h-11 px-5 bg-primary text-on-primary font-action-button text-sm rounded-lg hover:bg-action-hover transition-colors duration-160"
+        onclick="resetAllFilters()" type="button">
+        <span class="material-symbols-outlined text-base" data-icon="refresh">refresh</span>
+        <span>Pulihkan Tampilan Katalog</span>
+      </button>
+    </div>
+    <!-- Banner Bantuan Teknis & WhatsApp (Kontekstual Produk) -->
+    <section aria-label="Bantuan Teknis dan Suku Cadang"
+      class="bg-gradient-to-br from-[#eaf2f9] via-surface-container-low to-[#dceaf7] border border-primary/25 rounded-2xl p-6 md:p-10 mb-space-xl shadow-sm relative overflow-hidden">
+      <div class="absolute right-0 bottom-0 pointer-events-none opacity-20 text-primary w-48 h-48 -mr-12 -mb-12"><svg
+          width="100%" height="100%" viewBox="0 0 160 160" fill="none" stroke="currentColor">
+          <circle cx="80" cy="80" r="70" stroke-width="1.5" stroke-dasharray="4 4"></circle>
+          <circle cx="80" cy="80" r="45" stroke-width="1"></circle>
+          <path d="M10 80 H150 M80 10 V150" stroke-width="1" opacity="0.5"></path>
+        </svg></div>
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+        <div class="max-w-2xl">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 bg-surface-blue border border-border-hairline rounded-lg text-xs font-label-ui text-primary mb-3">
+            <span class="material-symbols-outlined text-sm" data-icon="build">build</span>
+            <span>Pengadaan Khusus &amp; Suku Cadang Resmi</span>
+          </div>
+          <h3 class="text-headline-sm font-headline-sm text-text-body text-2xl tracking-tight mb-2">
+            Tidak Menemukan Tipe atau Spesifikasi yang Dicari?
+          </h3>
+          <p class="text-body-default font-body-default text-text-muted leading-relaxed">
+            Dunia Pool &amp; Pond menyediakan berbagai suku cadang pengganti (impeller, mechanical seal, cartridge
+            filter, multiport valve) serta pengadaan peralatan proyek khusus sesuai perhitungan Total Dynamic Head (TDH)
+            Anda.
+          </p>
+        </div>
+        <div class="flex-shrink-0">
+          <a class="h-13 px-6 bg-primary-container hover:bg-action-hover text-on-primary font-action-button text-action-button rounded-lg inline-flex items-center gap-3 transition-colors duration-160 focus:outline-none focus:ring-2 focus:ring-primary-container focus:ring-offset-2 whitespace-nowrap"
+            href="https://wa.me/6282118075560?text=Halo%20Teknisi%20Dunia%20Pool%20%26%20Pond%2C%20saya%20mencari%20spesifikasi%20alat%20atau%20suku%20cadang%20khusus%20untuk%20kolam%20renang."
+            rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-xl" data-icon="perm_phone_msg">perm_phone_msg</span>
+            <span>Konsultasi Kebutuhan Produk ke WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Pilihan Merek Resmi & Kemitraan (BrandGrid) -->
+    <section aria-label="Daftar Merek Resmi"
+      class="border border-[#d5e2ec] rounded-2xl p-6 md:p-8 bg-surface-container-lowest/80 backdrop-blur-sm shadow-sm mb-space-xl relative overflow-hidden">
+      <div class="mb-4">
+        <h4 class="text-base font-semibold text-text-body font-headline-sm uppercase tracking-wide">
+          Pilihan Merek Peralatan yang Tersedia
+        </h4>
+        <p class="text-xs text-text-muted font-body-default mt-1">
+          Dunia Pool &amp; Pond bermitra dengan distributor resmi untuk memastikan keaslian komponen dan garansi unit
+          mekanis.
+        </p>
+      </div>
+      <!-- Brand Badges / Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3 my-4">
+        <div
+          class="h-12 border border-border-hairline rounded-lg flex items-center justify-center bg-surface-secondary text-text-body font-semibold text-sm">
+          AstralPool
+        </div>
+        <div
+          class="h-12 border border-border-hairline rounded-lg flex items-center justify-center bg-surface-secondary text-text-body font-semibold text-sm">
+          Hayward
+        </div>
+        <div
+          class="h-12 border border-border-hairline rounded-lg flex items-center justify-center bg-surface-secondary text-text-body font-semibold text-sm">
+          Pentair
+        </div>
+        <div
+          class="h-12 border border-border-hairline rounded-lg flex items-center justify-center bg-surface-secondary text-text-body font-semibold text-sm">
+          Emaux
+        </div>
+        <div
+          class="h-12 border border-border-hairline rounded-lg flex items-center justify-center bg-surface-secondary text-text-body font-semibold text-sm">
+          DAB
+        </div>
+        <div
+          class="h-12 border border-border-hairline rounded-lg flex items-center justify-center bg-surface-secondary text-text-body font-semibold text-sm">
+          Waterco
+        </div>
+        <div
+          class="h-12 border border-border-hairline rounded-lg flex items-center justify-center bg-surface-secondary text-text-body font-semibold text-sm">
+          Venezia
+        </div>
+        <div
+          class="h-12 border border-border-hairline rounded-lg flex items-center justify-center bg-surface-secondary text-text-body font-semibold text-sm">
+          York
+        </div>
+      </div>
+      <p class="text-xs text-text-muted font-label-ui">
+        *Pilihan dan ketersediaan menyesuaikan produk. Hubungi kami untuk konfirmasi ketersediaan tipe dan suku cadang.
+      </p>
+    </section>
+  </main>
+  <!-- Technical Spec Modal (Lightweight Pure JS) -->
+  <dialog class="p-0 rounded-xl backdrop:bg-inverse-surface/60 border border-border-hairline max-w-lg w-full shadow-2xl"
+    id="specModal">
+    <div class="p-6 bg-bg-canvas text-text-body">
+      <div class="flex items-center justify-between pb-3 border-b border-border-hairline">
+        <h4 class="text-headline-sm font-headline-sm text-lg text-text-body" id="modalTitle">Spesifikasi Unit</h4>
+        <button class="text-text-muted hover:text-text-body p-1 rounded-lg"
+          onclick="document.getElementById('specModal').close()" type="button">
+          <span class="material-symbols-outlined" data-icon="close">close</span>
+        </button>
+      </div>
+      <div class="py-4 text-sm text-text-muted font-body-default leading-relaxed" id="modalContent">
+        Informasi spesifikasi teknis.
+      </div>
+      <div class="pt-3 border-t border-border-hairline flex justify-end gap-3">
+        <button
+          class="px-4 py-2 text-xs font-semibold rounded-lg border border-border-hairline hover:bg-surface-secondary text-text-body"
+          onclick="document.getElementById('specModal').close()" type="button">
+          Tutup
+        </button>
+        <a class="px-4 py-2 text-xs font-semibold rounded-lg bg-primary-container text-on-primary hover:bg-action-hover inline-flex items-center gap-1.5"
+          href="https://wa.me/6282118075560" id="modalWaBtn" rel="noopener noreferrer" target="_blank">
+          <span class="material-symbols-outlined text-sm" data-icon="chat">chat</span>
+          <span>Konsultasi Tipe Ini</span>
+        </a>
+      </div>
+    </div>
+  </dialog>
+  <!-- Footer (Shared Components JSON Blueprint Executed) -->
+  <footer
+    class="bg-inverse-surface dark:bg-surface-container-lowest text-inverse-on-surface dark:text-on-surface border-t border-border-hairline dark:border-outline-variant docked full-width bottom-0 mt-auto">
+    <div class="w-full max-w-[1240px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <!-- Kolom Brand & Identitas -->
+        <div class="md:col-span-2">
+          <span
+            class="text-headline-sm font-headline-sm text-inverse-on-surface dark:text-on-surface tracking-tight uppercase block mb-2">
+            DUNIA POOL &amp; POND
+          </span>
+          <p class="text-sm text-outline-variant max-w-md font-body-default leading-relaxed mb-4">
+            Spesialis konstruksi, renovasi, instalasi sistem hidrolika kolam renang dan kolam ikan hias air jernih.
+            Standar rekayasa sipil teruji sejak 1997.
+          </p>
+          <div class="text-xs text-outline-variant space-y-1 font-label-ui">
+            <p class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+              <span>Padalarang, Kabupaten Bandung Barat, Jawa Barat</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-sm" data-icon="call">call</span>
+              <span>WhatsApp Teknis: +62 821-1807-5560</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-sm" data-icon="camera_alt">camera_alt</span>
+              <span>Instagram: @duniapoolnpond</span>
+            </p>
+          </div>
+        </div>
+        <!-- Kolom Navigasi Footer -->
+        <div>
+          <h4
+            class="text-xs font-semibold uppercase tracking-wider text-inverse-primary dark:text-primary mb-3 font-label-ui">
+            Navigasi Utama
+          </h4>
+          <ul class="space-y-2 text-sm font-body-default">
+            <li><a
+                class="text-outline-variant dark:text-text-muted hover:text-inverse-primary dark:hover:text-primary transition-colors duration-150"
+                href="#beranda">Beranda</a></li>
+            <li><a
+                class="text-outline-variant dark:text-text-muted hover:text-inverse-primary dark:hover:text-primary transition-colors duration-150"
+                href="#tentang-kami">Tentang Kami</a></li>
+            <li><a
+                class="text-outline-variant dark:text-text-muted hover:text-inverse-primary dark:hover:text-primary transition-colors duration-150"
+                href="#layanan">Layanan Hidrolika</a></li>
+            <li><a
+                class="text-outline-variant dark:text-text-muted hover:text-inverse-primary dark:hover:text-primary transition-colors duration-150"
+                href="#proyek">Dokumentasi Proyek</a></li>
+            <li><a class="text-inverse-on-surface dark:text-on-surface font-action-button" href="#produk">Katalog
+                Produk</a></li>
+          </ul>
+        </div>
+        <!-- Kolom Layanan & Kebijakan -->
+        <div>
+          <h4
+            class="text-xs font-semibold uppercase tracking-wider text-inverse-primary dark:text-primary mb-3 font-label-ui">
+            Layanan &amp; Legal
+          </h4>
+          <ul class="space-y-2 text-sm font-body-default">
+            <li><a
+                class="text-outline-variant dark:text-text-muted hover:text-inverse-primary dark:hover:text-primary transition-colors duration-150"
+                href="#kontak">Kontak Teknis</a></li>
+            <li><a
+                class="text-outline-variant dark:text-text-muted hover:text-inverse-primary dark:hover:text-primary transition-colors duration-150"
+                href="#kebijakan-privasi">Kebijakan Privasi</a></li>
+            <li><a
+                class="text-outline-variant dark:text-text-muted hover:text-inverse-primary dark:hover:text-primary transition-colors duration-150"
+                href="#ketentuan-layanan">Ketentuan Layanan</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Copyright Notice (Literal from JSON) -->
+      <div
+        class="pt-8 border-t border-border-hairline/20 dark:border-outline-variant/30 flex flex-col md:flex-row items-center justify-between text-xs text-outline-variant dark:text-text-muted font-label-ui gap-4">
+        <p>© 1997-2024 Dunia Pool &amp; Pond. The Pool Specialist. Hak Cipta Dilindungi Undang-Undang. Padalarang,
+          Bandung Barat. WhatsApp: +6282118075560</p>
+        <div class="flex items-center gap-4">
+          <span>Struktur Rekayasa Bersertifikasi</span>
+          <span>•</span>
+          <span>Bebas Biaya Survey Bandung Area</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Micro-Interactions & Filter Controller Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('catalog-search');
+      const categorySelect = document.getElementById('category-select');
+      const pills = document.querySelectorAll('.category-pill');
+      const cards = document.querySelectorAll('.product-card');
+      const counterText = document.getElementById('result-counter');
+      const emptyState = document.getElementById('empty-state');
+      const resetBtn = document.getElementById('reset-filter-btn');
+
+      function filterProducts() {
+        const query = searchInput.value.toLowerCase().trim();
+        const selectedCat = categorySelect.value;
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const cardCategory = card.getAttribute('data-category');
+          const title = card.querySelector('h2').textContent.toLowerCase();
+          const desc = card.querySelector('p').textContent.toLowerCase();
+
+          // Category matching logic
+          let catMatch = false;
+          if (selectedCat === 'all') {
+            catMatch = true;
+          } else if (selectedCat === 'skimmer-fitting') {
+            catMatch = (cardCategory === 'skimmer' || cardCategory === 'fitting');
+          } else {
+            catMatch = (cardCategory === selectedCat);
+          }
+
+          // Search term matching
+          const textMatch = title.includes(query) || desc.includes(query);
+
+          if (catMatch && textMatch) {
+            card.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        // Update counter & toggle empty state
+        if (visibleCount > 0) {
+          emptyState.classList.add('hidden');
+          counterText.innerHTML = `<span class="w-2 h-2 rounded-full bg-feedback-success inline-block"></span> Menampilkan ${visibleCount} kategori peralatan kolam renang`;
+        } else {
+          emptyState.classList.remove('hidden');
+          counterText.innerHTML = `<span class="w-2 h-2 rounded-full bg-feedback-error inline-block"></span> Tidak ada produk yang sesuai kriteria`;
+        }
+      }
+
+      // Input Search Listener
+      searchInput.addEventListener('input', filterProducts);
+
+      // Select Dropdown Listener
+      categorySelect.addEventListener('change', () => {
+        const val = categorySelect.value;
+        // Sync active state of pills
+        pills.forEach(pill => {
+          if (pill.getAttribute('data-filter') === val) {
+            setActivePill(pill);
+          }
+        });
+        filterProducts();
+      });
+
+      // Quick Filter Pills Click
+      pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          const filterVal = pill.getAttribute('data-filter');
+          setActivePill(pill);
+
+          if (filterVal === 'skimmer-fitting') {
+            categorySelect.value = 'skimmer'; // nearest representation
+          } else if (filterVal === 'all') {
+            categorySelect.value = 'all';
+          } else {
+            categorySelect.value = filterVal;
+          }
+
+          // Force custom filter value if needed
+          if (filterVal === 'skimmer-fitting') {
+            // direct apply
+            filterSpecificGroup('skimmer-fitting');
+            return;
+          }
+
+          filterProducts();
+        });
+      });
+
+      function filterSpecificGroup(group) {
+        const query = searchInput.value.toLowerCase().trim();
+        let count = 0;
+        cards.forEach(card => {
+          const cardCategory = card.getAttribute('data-category');
+          const title = card.querySelector('h2').textContent.toLowerCase();
+          const desc = card.querySelector('p').textContent.toLowerCase();
+          const textMatch = title.includes(query) || desc.includes(query);
+          const catMatch = (cardCategory === 'skimmer' || cardCategory === 'fitting');
+
+          if (catMatch && textMatch) {
+            card.classList.remove('hidden');
+            count++;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+        if (count > 0) {
+          emptyState.classList.add('hidden');
+          counterText.innerHTML = `<span class="w-2 h-2 rounded-full bg-feedback-success inline-block"></span> Menampilkan ${count} peralatan sirkulasi`;
+        } else {
+          emptyState.classList.remove('hidden');
+          counterText.innerHTML = `<span class="w-2 h-2 rounded-full bg-feedback-error inline-block"></span> Tidak ada produk yang sesuai`;
+        }
+      }
+
+      function setActivePill(activePill) {
+        pills.forEach(p => {
+          p.classList.remove('bg-primary', 'text-on-primary', 'border-primary', 'active');
+          p.classList.add('bg-surface-secondary', 'text-text-body', 'border-border-hairline');
+        });
+        activePill.classList.remove('bg-surface-secondary', 'text-text-body', 'border-border-hairline');
+        activePill.classList.add('bg-primary', 'text-on-primary', 'border-primary', 'active');
+      }
+
+      // Reset Button
+      resetBtn.addEventListener('click', window.resetAllFilters = function () {
+        searchInput.value = '';
+        categorySelect.value = 'all';
+        setActivePill(pills[0]);
+        cards.forEach(c => c.classList.remove('hidden'));
+        emptyState.classList.add('hidden');
+        counterText.innerHTML = `<span class="w-2 h-2 rounded-full bg-feedback-success inline-block"></span> Menampilkan 9 kategori peralatan kolam renang`;
+      });
+    });
+
+    // Specification Modal Trigger
+    function openSpecModal(title, specText) {
+      const modal = document.getElementById('specModal');
+      document.getElementById('modalTitle').textContent = title;
+      document.getElementById('modalContent').textContent = specText;
+      document.getElementById('modalWaBtn').href = `https://wa.me/6282118075560?text=Halo%20Dunia%20Pool%20%26%20Pond%2C%20saya%20ingin%20tanya%20detail%20spesifikasi%20untuk%20${encodeURIComponent(title)}.`;
+      modal.showModal();
+    }
+  </script>
+
+
+</body>
+
+</html>

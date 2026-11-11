@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Serve existing static files directly, excluding internal PHP includes/pages
+    RewriteCond %{REQUEST_URI} !^/includes/ [NC]
+    RewriteCond %{REQUEST_URI} !^/pages/ [NC]
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^ - [L]
+
+    # Route all other requests through index.php
+    RewriteRule ^ index.php [QSA,L]
+</IfModule>
+
