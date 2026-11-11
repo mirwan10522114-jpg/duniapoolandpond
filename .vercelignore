@@ -1,6 +1,6 @@
 *.mov
-brand logo/
-produk/
-source/
-kode.html
-.git/
+/brand logo/
+/produk/
+/source/
+/kode.html
+/.git/
