@@ -494,23 +494,27 @@ require __DIR__ . '/../includes/header.php';
         </div>
     </section>
 
-    <!-- SECTION BANNER KONSULTASI LAHAN (Biru Brand #0456A5 -> #024383) -->
+    <!-- SECTION BANNER KONSULTASI LAHAN (Biru Brand #024698 -> #013B7B) -->
     <section class="py-14 bg-[#E9F3FB] border-b border-border-hairline reveal-item">
         <div class="max-w-[1240px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
-            <div class="relative rounded-2xl text-white border border-[#1E72C6]/35 overflow-hidden shadow-[0_14px_38px_-10px_rgba(3,68,136,0.35)]" style="background: linear-gradient(125deg, #065EB2 0%, #0455A3 48%, #024385 100%);">
+            <div class="relative rounded-2xl text-white border border-[#1E72C6]/35 overflow-hidden shadow-[0_14px_38px_-10px_rgba(3,68,136,0.35)]" style="background: linear-gradient(125deg, #024698 0%, #0453A1 48%, #013B7B 100%);">
                 <?= render_section_decor('banner-waves', 'right-0 bottom-0 opacity-90 z-0') ?>
                 <div class="flex flex-col md:flex-row items-stretch relative z-10">
-                    <div class="relative w-full md:w-[270px] lg:w-[336px] xl:w-[350px] shrink-0 aspect-[4/5] md:aspect-auto md:min-h-[410px] lg:min-h-[500px] overflow-hidden bg-[#0558AC]">
-                        <img alt="Spesialis konstruksi dan konsultasi kolam renang Dunia Pool &amp; Pond" class="w-full h-full object-cover object-top" loading="lazy" src="<?= e(resolve_image('images/banner/tim-teknisi', '', true)) ?>" />
-                        <div aria-hidden="true" class="hidden md:block pointer-events-none absolute top-0 right-0 h-[82%] w-6 bg-gradient-to-r from-transparent to-[#0557A7]/75"></div>
+                    <div class="relative w-full md:w-[320px] lg:w-[400px] xl:w-[426px] shrink-0 aspect-[910/1024] overflow-hidden bg-[#024392]">
+                        <img
+                            alt="Spesialis konstruksi dan konsultasi kolam renang Dunia Pool &amp; Pond"
+                            class="w-full h-full object-cover object-top md:[mask-image:linear-gradient(to_right,#000_91.5%,transparent_100%)]"
+                            loading="lazy"
+                            src="<?= e(resolve_image('images/banner/tim-teknisi', '', true)) ?>"
+                        />
                     </div>
-                    <div class="flex-1 p-7 sm:p-10 lg:px-14 lg:py-12 flex flex-col justify-center space-y-5">
+                    <div class="flex-1 p-7 sm:p-10 lg:px-12 lg:py-12 flex flex-col justify-center space-y-5">
                         <div>
                             <span class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-white/15 border border-white/15 backdrop-blur-sm text-[11px] font-semibold uppercase tracking-widest text-white/95">
                                 Evaluasi Lahan &amp; Tata Letak
                             </span>
                         </div>
-                        <h3 class="text-2xl sm:text-3xl lg:text-[34px] font-headline-md font-bold text-white tracking-tight leading-[1.2] text-balance max-w-2xl">
+                        <h3 class="text-2xl sm:text-3xl lg:text-[32px] font-headline-md font-bold text-white tracking-tight leading-[1.2] text-balance max-w-2xl">
                             Optimalkan Luasan Pekarangan Anda Menjadi Kolam Renang Fungsional
                         </h3>
                         <div aria-hidden="true" class="w-12 h-[3px] rounded-full bg-[#38BDF8]"></div>
@@ -518,7 +522,7 @@ require __DIR__ . '/../includes/header.php';
                             Baik lahan terbatas untuk plunge pool minimalis maupun pekarangan luas berkonsep overflow, tim kami membantu memetakan dimensi kolam, posisi ruang mesin, dan estimasi anggaran yang realistis sebelum konstruksi dimulai.
                         </p>
                         <div class="flex flex-wrap items-center gap-4 sm:gap-5 pt-2">
-                            <a class="inline-flex items-center justify-center gap-2.5 bg-white hover:bg-[#F0F7FF] text-[#055296] font-action-button font-bold px-6 h-12 rounded-xl text-sm shadow-md hover:shadow-lg transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0455A3]" href="https://wa.me/6282118075560?text=Halo%20Dunia%20Pool%20%26%20Pond,%20saya%20ingin%20berkonsultasi%20rancangan%20kolam%20renang%20untuk%20lahan%20saya" rel="noopener noreferrer" target="_blank">
+                            <a class="inline-flex items-center justify-center gap-2.5 bg-white hover:bg-[#F0F7FF] text-[#055296] font-action-button font-bold px-6 h-12 rounded-xl text-sm shadow-md hover:shadow-lg transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0453A1]" href="https://wa.me/6282118075560?text=Halo%20Dunia%20Pool%20%26%20Pond,%20saya%20ingin%20berkonsultasi%20rancangan%20kolam%20renang%20untuk%20lahan%20saya" rel="noopener noreferrer" target="_blank">
                                 <span aria-hidden="true" class="material-symbols-outlined text-[19px]">chat</span>
                                 <span>Diskusikan Rancangan Lahan</span>
                             </a>
